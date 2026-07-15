@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07111f" />
+    <meta name="description" content="부산대학교 디지털트윈 피지컬AI 연구실 — Digital Twin, Physical AI, Sim2Real, Robotics, Optimization" />
+    <meta property="og:title" content="DTPLab · Digital Twin Physical AI Lab" />
+    <meta property="og:description" content="We build intelligent systems that cross the boundary between simulation and reality." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="og.png" />
+    <title>DTPLab · Digital Twin Physical AI Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="DTPLab 홈">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i></span>
+        <span><b>DTP</b>Lab<small>PNU · CSE</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span><span class="sr-only">메뉴 열기</span>
+      </button>
+      <nav id="site-nav" aria-label="주요 메뉴">
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#people">People</a>
+        <a href="#publications">Publications</a>
+        <a href="#seminars">Seminars</a>
+        <a class="nav-cta" href="#join">Join us <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span>01</span> Digital Twin Physical AI Lab</p>
+          <h1 id="hero-title">SIMULATION<br />MEETS <em>REALITY.</em></h1>
+          <p class="hero-lead">시뮬레이션과 현실의 경계를 넘어, 실제 세계에서 학습하고 판단하며 움직이는 지능형 시스템을 연구합니다.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research">Explore our research <span>↘</span></a>
+            <a class="button button-ghost" href="#join">2027년 1학기 모집 중</a>
+          </div>
+          <dl class="hero-stats" aria-label="연구실 주요 수치">
+            <div><dt>04</dt><dd>Core research<br />domains</dd></div>
+            <div><dt>08</dt><dd>Current<br />projects</dd></div>
+            <div><dt>17</dt><dd>Active lab<br />members</dd></div>
+          </dl>
+        </div>
+
+        <div class="twin-visual reveal" aria-label="디지털 트윈과 현실을 연결하는 추상 그래픽">
+          <div class="visual-label label-top">DIGITAL TWIN / 2026</div>
+          <div class="orbit orbit-one"><span></span></div>
+          <div class="orbit orbit-two"><span></span></div>
+          <div class="core"><span>DTP</span><small>SIM ↔ REAL</small></div>
+          <div class="coordinate c1">X 35.2338<br />Y 129.0793</div>
+          <div class="coordinate c2">SYNC 99.8%<br />LATENCY 08ms</div>
+          <div class="signal-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="visual-label label-bottom">PUSAN NATIONAL UNIVERSITY</div>
+        </div>
+      </section>
+
+      <section class="news-strip" aria-label="최신 소식">
+        <div class="news-label"><span></span> Latest</div>
+        <p><time datetime="2026-04">2026.04</time> Isaac Sim–PhysX 물리엔진과 강화학습을 통한 세탁 성능 시뮬레이션 연구과제 수주</p>
+        <a href="#news" aria-label="소식 더 보기">All news <span>→</span></a>
+      </section>
+
+      <section class="section research-section" id="research" aria-labelledby="research-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span>02</span> What we explore</p>
+            <h2 id="research-title">현실을 이해하는<br /><em>가상 세계.</em></h2>
+          </div>
+          <p>정교한 디지털트윈 환경에서 데이터를 만들고, AI를 학습하며, 그 지능을 현실의 로봇과 산업 시스템으로 전이합니다.</p>
+        </div>
+        <div class="research-grid">
+          <article class="research-card reveal">
+            <span class="card-index">01</span><span class="card-code">SIM2REAL</span>
+            <div class="card-symbol symbol-transfer" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h3>Sim2Real<br />Transfer Learning</h3>
+            <p>Domain Randomization과 Adaptation을 통해 가상환경에서 학습한 모델과 에이전트가 실제 환경에서도 안정적으로 동작하도록 합니다.</p>
+          </article>
+          <article class="research-card reveal">
+            <span class="card-index">02</span><span class="card-code">EMBODIED AI</span>
+            <div class="card-symbol symbol-robot" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h3>Physical AI &amp;<br />Robotic Intelligence</h3>
+            <p>디지털트윈과 월드모델, Physical AI를 결합해 환경을 이해하고 스스로 행동하는 embodied intelligence를 연구합니다.</p>
+          </article>
+          <article class="research-card reveal">
+            <span class="card-index">03</span><span class="card-code">SURROGATE</span>
+            <div class="card-symbol symbol-wave" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <h3>Deep Surrogate<br />Modeling</h3>
+            <p>열·동역학 물리모델의 고비용 연산을 신뢰성 있게 근사하고, 초장기 시계열 예측의 안정성을 높입니다.</p>
+          </article>
+          <article class="research-card reveal">
+            <span class="card-index">04</span><span class="card-code">OPTIMIZATION</span>
+            <div class="card-symbol symbol-opt" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <h3>Domain<br />Optimization</h3>
+            <p>강화학습, 베이지안 최적화, 메타휴리스틱을 활용해 로봇 제어와 산업 설비 운영의 효율을 높입니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading compact reveal">
+          <div><p class="eyebrow"><span>03</span> Selected projects</p><h2 id="projects-title">Research in <em>motion.</em></h2></div>
+          <p>산업 현장의 난제를 디지털트윈과 AI로 해결합니다.</p>
+        </div>
+        <div class="project-list">
+          <article class="project-item reveal">
+            <div class="project-number">01</div>
+            <div class="project-meta"><span class="status active">ACTIVE</span><span>2025.09 — 2030.01</span></div>
+            <div class="project-main"><h3>특수목적용 로봇 제어를 위한<br />디지털트윈·모델 기반 강화학습</h3><p>월드모델과 Domain Randomization을 활용해 고위험·고비용 작업을 자율화하는 Sim2Real 프레임워크를 구축합니다.</p><ul><li>World Model</li><li>MBRL</li><li>Autonomous Robot</li></ul></div>
+            <div class="project-partner">RISE<small>산학공동 기술개발</small></div>
+          </article>
+          <article class="project-item reveal">
+            <div class="project-number">02</div>
+            <div class="project-meta"><span class="status active">ACTIVE</span><span>2023.06 — 2027.12</span></div>
+            <div class="project-main"><h3>드론 영상 기반 산불 정보 인식<br />디지털트윈 시뮬레이터</h3><p>RGB·Thermal 드론 영상과 합성데이터를 결합해 산불의 크기, 면적, 발열량과 정교한 투척지점을 도출합니다.</p><ul><li>Drone Vision</li><li>Synthetic Data</li><li>GIS</li></ul></div>
+            <div class="project-partner">KEIT<small>산업통상자원부</small></div>
+          </article>
+          <article class="project-item reveal">
+            <div class="project-number">03</div>
+            <div class="project-meta"><span class="status active">ACTIVE</span><span>2026.04 — 2027.03</span></div>
+            <div class="project-main"><h3>Isaac Sim–PhysX 기반<br />세탁 성능 시뮬레이션</h3><p>고충실도 물리 시뮬레이션과 강화학습을 활용해 복잡한 세탁 동역학의 성능을 분석하고 최적화합니다.</p><ul><li>Isaac Sim</li><li>PhysX</li><li>Reinforcement Learning</li></ul></div>
+            <div class="project-partner">LG<small>Electronics</small></div>
+          </article>
+          <article class="project-item reveal">
+            <div class="project-number">04</div>
+            <div class="project-meta"><span class="status completed">COMPLETED</span><span>2024.03 — 2025.08</span></div>
+            <div class="project-main"><h3>조선소 용접로봇 자동화를 위한<br />비전 합성데이터</h3><p>실제 조선소를 가상 공간에 재현하고, 합성데이터만으로 높은 일반화 성능을 확보하는 용접선 인식 모델을 개발했습니다.</p><ul><li>Segmentation</li><li>Line Detection</li><li>Pose Estimation</li></ul></div>
+            <div class="project-partner">SHI<small>Samsung Heavy Industries</small></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section people-section" id="people" aria-labelledby="people-title">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span>04</span> People</p><h2 id="people-title">Curious minds.<br /><em>Real impact.</em></h2></div>
+          <p>서로 다른 관점과 전문성을 연결해 더 어려운 문제에 도전합니다.</p>
+        </div>
+        <article class="professor-card reveal">
+          <div class="portrait-placeholder" aria-label="김원석 교수 프로필 이니셜"><span>WK</span><i>PROFESSOR</i></div>
+          <div class="professor-info">
+            <p class="mono">PRINCIPAL INVESTIGATOR</p>
+            <h3>Won-Suk Kim, Ph.D.<small>김원석 부교수</small></h3>
+            <p>School of Computer Science and Engineering<br />Pusan National University</p>
+            <div class="professor-links"><a href="mailto:wonsukkim@pusan.ac.kr">wonsukkim@pusan.ac.kr</a><span>IT관 610호</span><span>+82 51 510 2777</span></div>
+          </div>
+          <dl class="career"><div><dt>2022 — Current</dt><dd>Associate Professor<br />Pusan National University</dd></div><div><dt>2020 — 2022</dt><dd>Assistant Professor<br />Andong National University</dd></div><div><dt>2016 — 2019</dt><dd>CEO / Founder<br />PlonVei Corp.</dd></div></dl>
+        </article>
+        <div class="member-groups">
+          <section class="member-group reveal" aria-labelledby="phd-title"><header><h3 id="phd-title">Ph.D. Students</h3><span>04</span></header><div class="member-list" data-members="phd"></div></section>
+          <section class="member-group reveal" aria-labelledby="ms-title"><header><h3 id="ms-title">M.S. Students</h3><span>05</span></header><div class="member-list" data-members="ms"></div></section>
+          <section class="member-group wide reveal" aria-labelledby="ug-title"><header><h3 id="ug-title">Undergraduate Researchers</h3><span>07</span></header><div class="member-list undergraduate" data-members="undergrad"></div></section>
+        </div>
+      </section>
+
+      <section class="section publications-section" id="publications" aria-labelledby="publications-title">
+        <div class="section-heading compact reveal">
+          <div><p class="eyebrow"><span>05</span> Publications</p><h2 id="publications-title">Ideas, <em>validated.</em></h2></div>
+          <p>Selected peer-reviewed articles from our recent work.</p>
+        </div>
+        <div class="publication-toolbar reveal" role="group" aria-label="논문 연도 필터">
+          <button class="filter-button active" type="button" data-year="all">All</button>
+          <button class="filter-button" type="button" data-year="2026">2026</button>
+          <button class="filter-button" type="button" data-year="2025">2025</button>
+          <button class="filter-button" type="button" data-year="2024">2024</button>
+        </div>
+        <div class="publication-list reveal" id="publication-list"></div>
+      </section>
+
+      <section class="section split-section" id="seminars">
+        <div class="seminars-panel reveal">
+          <div class="panel-heading"><p class="eyebrow"><span>06</span> Seminars</p><h2>Learn.<br />Question.<br /><em>Share.</em></h2></div>
+          <div class="seminar-list">
+            <article><time datetime="2026-03-09">2026.03.09</time><h3>ORSO: Accelerating Reward Design via Online Reward Selection and Policy Optimization</h3><p>이창민</p></article>
+            <article><time datetime="2026-03-03">2026.03.03</time><h3>Function Approximation in Reinforcement Learning</h3><p>하서현</p></article>
+            <article><time datetime="2026-02-23">2026.02.23</time><h3>Multi-Resolution Feature Perturbation for Sim2Real</h3><p>고은성</p></article>
+            <article><time datetime="2026-02-02">2026.02.02</time><h3>PDE-Refiner: Accurate Long Rollouts with Neural PDE Solvers</h3><p>이지혜</p></article>
+          </div>
+        </div>
+        <div class="news-panel reveal" id="news">
+          <div class="panel-heading"><p class="eyebrow"><span>07</span> News</p><h2>What’s<br /><em>happening.</em></h2></div>
+          <div class="news-list">
+            <article><time>2026.04</time><p>고은성, VLM-Guided Zero-shot Sim2Real 드론영상 산불라인 추정 연구, <b>ICPR 2026 Accepted</b></p></article>
+            <article><time>2026.03</time><p>DTPLab, <b>LG전자 HS사업본부 Target Lab</b> 선정</p></article>
+            <article><time>2026.03</time><p>CCTV 작업자 인식을 통한 디지털트윈 동기화 기술 개발 과제 수주</p></article>
+            <article><time>2026.03</time><p><b>Digital-X AIoT Physical AI 연구센터</b> 합류</p></article>
+            <article><time>2026.02</time><p>이창민, BK21 참여대학원생 <b>우수연구상 우수상</b> 수상</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery-section" aria-labelledby="gallery-title">
+        <div class="section-heading compact reveal">
+          <div><p class="eyebrow"><span>08</span> Lab life</p><h2 id="gallery-title">Beyond the <em>lab.</em></h2></div>
+          <p>함께 연구하고, 발표하고, 성장하는 순간들.</p>
+        </div>
+        <div class="gallery-grid">
+          <article class="gallery-card g1 reveal"><div class="event-art art-grid"><span>MOVE</span></div><time>2025.11</time><h3>새로운 연구실, 새로운 시작</h3><p>자연대연구실험동 → IT관</p></article>
+          <article class="gallery-card g2 reveal"><div class="event-art art-award"><span>01</span></div><time>2025.11</time><h3>AI대학원 학생주도 연구프로젝트</h3><p>장려상 · 김정호</p></article>
+          <article class="gallery-card g3 reveal"><div class="event-art art-talk"><span>MITA<br />2025</span></div><time>2025.07</time><h3>International Conference</h3><p>Oral presentation · 최호진, 이지혜</p></article>
+          <article class="gallery-card g4 reveal"><div class="event-art art-wave"><span>KCC</span></div><time>2025.07</time><h3>KCC 2025 &amp; Lab retreat</h3><p>연구와 휴식, 그리고 팀워크</p></article>
+        </div>
+      </section>
+
+      <section class="join-section" id="join" aria-labelledby="join-title">
+        <div class="join-noise" aria-hidden="true"></div>
+        <div class="join-heading reveal"><p class="eyebrow light"><span>09</span> Join DTPLab</p><h2 id="join-title">BUILD THE BRIDGE<br />BETWEEN <em>VIRTUAL</em><br />AND <em>REAL.</em></h2></div>
+        <div class="join-content reveal">
+          <p class="join-lead">2027년도 1학기 대학원생 및 학부연구생을 모집합니다.</p>
+          <div class="join-columns">
+            <div><h3>Who we look for</h3><ul><li>디지털트윈·Physical AI에 관심 있는 학생</li><li>자기주도적으로 연구를 수행할 수 있는 학생</li><li>컴퓨터공학·인공지능 및 관련 전공자</li></ul></div>
+            <div><h3>How to apply</h3><ol><li>성적증명서와 연구계획서를 이메일로 제출</li><li>연구실 T/O 확인</li><li>대면 면담 후 합류 결정</li></ol></div>
+          </div>
+          <a class="button button-lime" href="mailto:wonsukkim@pusan.ac.kr?subject=DTPLab%20연구실%20지원%20문의">Apply by email <span>↗</span></a>
+          <p class="application-note">연구계획서: 자유양식 A4 1장 이내 · 과거 학업성취, 관심분야, 연구계획 포함</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><a class="brand inverse" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><span><b>DTP</b>Lab<small>PNU · CSE</small></span></a><p>Digital Twin Physical AI Laboratory</p></div>
+      <div><h2>Contact</h2><a href="mailto:wonsukkim@pusan.ac.kr">wonsukkim@pusan.ac.kr</a><a href="mailto:pnudtn@gmail.com">pnudtn@gmail.com</a><a href="tel:+82515103531">+82 51 510 3531</a></div>
+      <div><h2>Location</h2><p>부산광역시 금정구 부산대학로63번길 2<br />부산대학교 IT관 610호 · 706호</p><a href="https://maps.google.com/?q=Pusan+National+University+IT+Building" target="_blank" rel="noreferrer">View on map ↗</a></div>
+      <div class="footer-bottom"><p>© <span id="year"></span> DTPLab. Pusan National University.</p><a href="https://sites.google.com/view/dtnlab" target="_blank" rel="noreferrer">Legacy site ↗</a><a href="#top">Back to top ↑</a></div>
+    </footer>
+  </body>
+</html>
