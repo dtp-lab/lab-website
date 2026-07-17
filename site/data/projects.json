@@ -1,0 +1,519 @@
+{
+  "source": "https://sites.google.com/view/dtnlab/projects",
+  "migrated": "2026-07-17",
+  "projects": [
+    {
+      "id": "project-01",
+      "status": "current",
+      "category": "industry",
+      "title": "디지털트윈 모델 기반 강화학습을 활용한 특수목적용 로봇 제어 기술 연구",
+      "program": "RISE 산학공동 기술개발과제",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2025.09",
+        "end": "2030.01"
+      },
+      "budget": {
+        "amount": "302,000",
+        "unit": "천원"
+      },
+      "keywords": [
+        "Digital Twin",
+        "Sim2Real",
+        "Robotics",
+        "Reinforcement Learning",
+        "Optimization"
+      ],
+      "description": "특수 목적 로봇의 다양한 고위험·고비용 작업 자율화를 위한 디지털트윈 시뮬레이션 환경 구축 및 모델 기반 강화학습 기술을 연구한다. 본 연구실에서는 (1)고정밀 디지털트윈 시뮬레이션 환경을 구축하고, 시뮬레이션으로 수집된 데이터를 기반으로 환경의 상태 전이와 보상을 예측하는 월드 모델을 학습하며, 도메인 랜덤화 기법을 적용하여 예측 성능과 일반화 성능을 향상시킨다. 또한, (2)이를 활용한 모델 기반 강화학습(MBRL)과, sparse reward 환경에 대응 가능한 보상 구조를 설계함으로써 다양한 작업 시나리오에서 자율적 판단과 복잡한 행동 계획이 가능한 정책을 도출한다.",
+      "details": [
+        "디지털트윈 시뮬레이터 기반 Model-free 강화학습 및 학습된 Agent의 Sim2Real Transfer 연구",
+        "특수목적 도메인 대상 월드 모델 학습 및 도메인 랜덤화 적용 기술 연구",
+        "Sparse Reward 환경 대응을 위한 보상 구조 최적화 연구",
+        "도메인 특화 DT-월드모델 기반 자율로봇 Sim2Real 전이학습 프레임워크 구축"
+      ],
+      "images": [],
+      "rawMeta": "RISE 산학공동 기술개발과제 | 302,000 (천원) | 2025.09. - 2030.01."
+    },
+    {
+      "id": "project-02",
+      "status": "current",
+      "category": "rnd",
+      "title": "드론 영상 기반 산불 정보 인식을 위한 디지털트윈 시뮬레이터 및 합성데이터 생성·활용 기술 연구",
+      "program": "산자부-KEIT(산기평)",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2023.06",
+        "end": "2027.12"
+      },
+      "budget": {
+        "amount": "32,808,108",
+        "unit": "천원"
+      },
+      "keywords": [
+        "Digital Twin",
+        "Computer Vision",
+        "Synthetic Data"
+      ],
+      "description": "산불 및 고층빌딩 화재와 같은 난접근성 화재의 효과적인 대응을 위한 드론 기반 가스하이드레이트 소화탄 투척 진화 시스템의 요소 기술을 연구한다. 본 연구실에서는 (1)소화탄 투척량 산출을 위해 모니터링 드론에서 촬영된 RGB·Thermal 영상을 활용하여 산불 크기, 면적, 발열량 등을 인식하며, 이를 위해 기존 산불데이터셋을 넘어 라벨데이터 확장을 위해 디지털트윈 기반 합성데이터 생성 및 활용 기술 연구를 수행한다. 또한, (2)모니터링 드론 주시방향으로 소화탄 투척지점을 도출하기 위해 해당 지역 GIS 기반 디지털트윈 공간 구축 후 정교한 투척지점 좌표 도출 연구를 수행한다.",
+      "details": [
+        "드론에서 촬영된 RGB·Thermal 영상 데이터 퓨전 기법 연구",
+        "디지털트윈 기반 드론 산불 영상 합성데이터셋 구축 및 활용 기술 연구",
+        "드론 영상 기반 산불 크기, 면적, 발열량 인식 연구",
+        "GIS 기반 산불 지역 디지털트윈 공간 구축 및 이를 활용한 투척지점 좌표 도출 연구"
+      ],
+      "images": [],
+      "rawMeta": "산자부-KEIT(산기평) | 32,808,108 (천원) | 2023.06. - 2027.12."
+    },
+    {
+      "id": "project-03",
+      "status": "current",
+      "category": "rnd",
+      "title": "디지털트윈 및 강화학습 기반 스마트팩토리 소모전력 최적화 기법 연구",
+      "program": "과기부-이노폴리스(연구특구진흥재단)",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2024.04",
+        "end": "2025.12"
+      },
+      "budget": {
+        "amount": "630,000",
+        "unit": "천원"
+      },
+      "keywords": [
+        "Digital Twin",
+        "Reinforcement Learning",
+        "Optimization",
+        "Surrogate Modeling",
+        "Energy Systems"
+      ],
+      "description": "제조공장 내 CDA(Clean Dry Air) 압축기 시스템에 디지털트윈을 적용하여 모니터링 데이터 기반 실시간 소모전력 최적화 기술을 연구한다. 구체적으로는, (1)디지털트윈 초저지연 모니터링 솔루션을 적용하여 CDA 압축기 시스템 실시간 데이터를 효과적으로 시각화하여 의사결정을 지원하고, (2)디지털트윈 실시간 수집 데이터 및 해석모델 데이터를 활용하여 성능 저하 없이 전력 소모량을 최소화할 수 있는 메타휴리스틱 최적화 알고리즘 적용 및 평가를 수행한다.",
+      "details": [
+        "Modbus, NoSQL, DT Engine을 활용한 CDA 시스템 디지털트윈 초저지연 모니터링 시스템 구축",
+        "CDA 압축기 시스템 운용 최적조합 도출을 위한 메타휴리스틱 및 강화학습 최적화 알고리즘 연구",
+        "디지털트윈 실시간 수집 데이터를 반영한 현재 시스템 추정 성능치 기반 최적화 수행",
+        "CDA 시스템 수집 데이터 기반 online deep surrogate model 구축"
+      ],
+      "images": [],
+      "rawMeta": "과기부-이노폴리스(연구특구진흥재단) | 630,000 (천원) | 2024.04. - 2025.12."
+    },
+    {
+      "id": "project-04",
+      "status": "current",
+      "category": "industry",
+      "title": "조선소 용접로봇 자동화를 위한 디지털트윈 비전 합성데이터 생성·활용 고도화 기술 연구",
+      "program": "삼성중공업",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2024.03",
+        "end": "2025.08"
+      },
+      "budget": {
+        "amount": "66,000",
+        "unit": "천원"
+      },
+      "keywords": [
+        "Digital Twin",
+        "Robotics",
+        "Computer Vision",
+        "Synthetic Data"
+      ],
+      "description": "조선소에서 용접로봇 공정 자동화를 위해서는 다양한 작업 환경을 정밀하게 인식하고 대응할 수 있는 AI 모델이 요구된다. 하지만 매번 실제 작업 현장에서 영상을 수집 및 가공하기에는 비용과 시간이 많이 소요되며, 여러 환경 변수를 모두 반영하기도 쉽지 않다. 본 연구에서는 디지털트윈 기술을 활용해 실제 조선소 작업 현장을 가상 공간에 정교하게 재현하고, 여기서 생성한 합성데이터셋만으로 충분히 높은 일반화 성능을 확보할 수 있는 용접선 인식 모델을 개발한다.",
+      "details": [
+        "조선소 용접로봇 작업환경에서 정교한 비전 합성데이터 생성을 위한 디지털트윈 공간 구축 고도화",
+        "합성데이터 기반 용접 파츠 Image Segmentation 및 Line Detection 모델 학습",
+        "선 데이터 정제 및 추론한 용접선 데이터를 로봇 인식 좌표로 변환",
+        "Depth Camera 기반 Camera Pose Estimation"
+      ],
+      "images": [],
+      "rawMeta": "삼성중공업 | 66,000 (천원) | 2024.03. - 2025.08."
+    },
+    {
+      "id": "project-05",
+      "status": "current",
+      "category": "industry",
+      "title": "디지털트윈·강화학습 기반 자항선 3D 블록 배치 최적화 기술 연구",
+      "program": "한화오션",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2025.06",
+        "end": "2026.02"
+      },
+      "budget": {
+        "amount": "66,000",
+        "unit": "천원"
+      },
+      "keywords": [
+        "Digital Twin",
+        "Reinforcement Learning",
+        "Optimization"
+      ],
+      "description": "자항선에 블록을 선적하는 과정에서 2D 정보만으로 배치가 이루어져 공간 활용에 비효율이 발생하고 있다. 이에 대응하기 위해서는 블록의 입체적인 형상, 지지 구조물(T/P, 트레슬), 자항선의 다양한 구조 및 장애물 등을 반영한 정밀한 배치가 필요하다. 본 연구에서는 디지털트윈 기반 시뮬레이터를 통해 실제 환경을 가상으로 재현하고, 이를 통해 생성된 데이터로 최적 배치 알고리즘을 개발한다. 최종적으로는 강화학습 기반 접근법을 통해 배치 최적화 속도와 품질을 동시에 향상시키는 것이 목표이다.",
+      "details": [
+        "자항선, 블록, T/P, 트레슬 등의 형상을 통합한 2.5D 복셀 기반 공간 표현 기술 개발",
+        "3D 형상 기반의 블록 배치를 위한 휴리스틱 탐색 및 최적화 알고리즘 구현",
+        "블록 회전, 배치 지점 선택 등 의사결정 단계를 대체하는 강화학습 기반 배치 정책 학습",
+        "실제 환경을 반영한 디지털트윈 시뮬레이터 구축을 통한 합성 데이터 생성 및 강화학습 학습 효율 향상"
+      ],
+      "images": [],
+      "rawMeta": "한화오션 | 66,000 (천원) | 2025.06. - 2026.02."
+    },
+    {
+      "id": "project-06",
+      "status": "current",
+      "category": "industry",
+      "title": "디지털트윈 기반 실시간 스마트야드 모니터링·원격제어 시스템 개발",
+      "program": "삼성중공업",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2023.05",
+        "end": "2025.12"
+      },
+      "budget": {
+        "amount": "114,400",
+        "unit": "천원"
+      },
+      "keywords": [
+        "Digital Twin",
+        "Optimization",
+        "Computer Vision"
+      ],
+      "description": "조선소 내 고위험·고정밀 작업을 안전하고 효율적으로 운영하기 위해 디지털트윈 기반 실시간 모니터링·원격제어 기술을 개발한다. 본 연구에서는 도면 기반 정밀 3D 모델 구축, 모든 공정을 한 화면에서 파악할 수 있는 디지털트윈 공간 및 다중 카메라 스트림 기반 시각화, 데이터 가공을 통한 저지연 동기화 기술 등을 개발하여 작업 현장에 적용하였다.",
+      "details": [
+        "장비 및 설비 도면 기반 상세 3D 모델링을 통한 디지털트윈 공간 구축",
+        "현장 모니터링 데이터와 디지털트윈 공간 가상객체 간 저지연 데이터 동기화 시스템 개발",
+        "서드파티 카메라 스트림 제어를 위한 스크립트 인젝션 기술 개발",
+        "서드파티 제어 애플리케이션 통합 임베딩 및 성능 최적화"
+      ],
+      "images": [],
+      "rawMeta": "삼성중공업 | 114,400 (천원) | 2023.05. - 2025.12."
+    },
+    {
+      "id": "project-07",
+      "status": "current",
+      "category": "talent",
+      "title": "인공지능 융합혁신 인재양성 (AI대학원)",
+      "program": "과기부",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2023.07",
+        "end": "2026.12"
+      },
+      "budget": null,
+      "keywords": [
+        "AI Education"
+      ],
+      "description": "",
+      "details": [],
+      "images": [],
+      "rawMeta": "과기부 | 2023.07. - 2026.12."
+    },
+    {
+      "id": "project-08",
+      "status": "current",
+      "category": "talent",
+      "title": "산업융합형 멀티모달 생성 인공지능 인재양성",
+      "program": "과기부",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2024.04",
+        "end": "2027.12"
+      },
+      "budget": null,
+      "keywords": [
+        "AI Education"
+      ],
+      "description": "",
+      "details": [],
+      "images": [],
+      "rawMeta": "과기부 | 2024.04. - 2027.12."
+    },
+    {
+      "id": "project-09",
+      "status": "current",
+      "category": "rnd",
+      "title": "스마트야드 전문인력양성",
+      "program": "산자부",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2022.03",
+        "end": "2026.02"
+      },
+      "budget": null,
+      "keywords": [],
+      "description": "",
+      "details": [],
+      "images": [],
+      "rawMeta": "산자부 | 2022.03. - 2026.02."
+    },
+    {
+      "id": "project-10",
+      "status": "completed",
+      "category": "rnd",
+      "title": "강화학습 기반 전기차 통합열관리 PI/MRAC 제어시스템 효율 최적화 기법 연구",
+      "program": "산자부-KIAT",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2023.04",
+        "end": "2024.12"
+      },
+      "budget": {
+        "amount": "901,351",
+        "unit": "천원"
+      },
+      "keywords": [
+        "Digital Twin",
+        "Reinforcement Learning",
+        "Optimization",
+        "Surrogate Modeling",
+        "Energy Systems"
+      ],
+      "description": "전기차는 엔진 열로 히터를 가동하는 내연기관 차량과는 달리, 전기에너지로 직접 히터를 가동해야 하므로 전비(연비) 중 차량 내부 열관리가 차지하는 비중이 20-60%로 매우 높다. 본 연구실에서는 전기차 통합열관리 Model Reference Adaptive Control 운용 효율 최적화를 위해, 차량 속도, 가감속 페달 조작량, 내·외기 온도, 경사도와 같은 다양한 파라미터 상태값에 따라 실시간 제어를 수행하는 강화학습 기반 열관리시스템 제어 기술을 연구한다.",
+      "details": [
+        "통합열관리 제어시스템 내부 모듈 동작 분석",
+        "MRAC 기반 열관리시스템 실시간 적응 제어를 위한 TD3 심층강화학습 모델 설계",
+        "WLTP 주행모드 시뮬레이션 및 HILS(Hardware In the Loop Simulation) 활용 알고리즘 검증",
+        "Transformer 기반 통합열관리 시뮬레이터 Deep Surrogate Model 구축"
+      ],
+      "images": [],
+      "rawMeta": "산자부-KIAT | 901,351 (천원) | 2023.04. - 2024.12."
+    },
+    {
+      "id": "project-11",
+      "status": "completed",
+      "category": "rnd",
+      "title": "디지털트윈 공간 기반 3D 교육훈련 VR·AR 콘텐츠 저작기술 개발",
+      "program": "부산테크노파크",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2024.05",
+        "end": "2024.11"
+      },
+      "budget": {
+        "amount": "85,000",
+        "unit": "천원"
+      },
+      "keywords": [
+        "Digital Twin",
+        "AI Education"
+      ],
+      "description": "디지털 트윈 공간을 기반으로 교육훈련 콘텐츠 제작할 수 있는 디지털 트윈 기반 콘텐츠 저작 기술이 빠르게 확산되고 있다. 이에 본 연구실에서는 교육·훈련 콘텐츠를 실 공간에서 모바일 기기로 증강현실 형태로 보기 위해 VPS기반 AR 콘텐츠 가시화 기술 연구를 진행하였다.",
+      "details": [
+        "VPS 기반 위치 측위 기술 및 미디어 콘텐츠 디지털트윈 가시화 기술 개발"
+      ],
+      "images": [],
+      "rawMeta": "부산테크노파크 | 85,000 (천원) | 2024.05. - 2024.11."
+    },
+    {
+      "id": "project-12",
+      "status": "completed",
+      "category": "industry",
+      "title": "RoRo 선박 화물 선적 계획을 위한 화물 배치 최적화 알고리즘 개발",
+      "program": "토탈소프트뱅크",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2024.03",
+        "end": "2024.09"
+      },
+      "budget": {
+        "amount": "27,500",
+        "unit": "천원"
+      },
+      "keywords": [
+        "Optimization"
+      ],
+      "description": "차량을 주로 운송하는 RoRo 선박은 운항 전 선적 계획을 수립하며, 운항 시에는 여러 항을 순차적으로 방문하며 차량을 선하역한다. 이때, 특정 항구에서 선적되는 화물의 이동 경로가 기 선적된 다른 차량에 의해 차단되는 경우가 발생할 수 있으며, 이 경우 해당 차량을 임시로 하역했다가 재선적하는 재취급이 발생하게 된다. 이러한 선적 계획 문제는 NP-hard RoRo Ship Stowage Problem으로 정의된다. 본 연구실에서는 이를 해결하기 위해 선박 구조의 Conflict-Free Block 모델링, Affinity Volume-based Cargo Ordering, 재취급 화물 분할과 같은 세부요소로 구성된 휴리스틱 알고리즘을 제안하여 기존 방법 대비 재취급 횟수를 64%까지 감소시켰다.",
+      "details": [
+        "선박 내부 Shared Path를 고려한 Conflict-Free Block 모델링",
+        "POL/POD Volume Matrix 및 DAG를 활용한 Cargo Ordering",
+        "재취급 화물 분할 및 백트래킹 기반 최적화 기법",
+        "높이, 무게 등 다양한 메트릭을 적용 가능한 범용 휴리스틱 알고리즘 제안"
+      ],
+      "images": [],
+      "rawMeta": "토탈소프트뱅크 | 27,500 (천원) | 2024.03. - 2024.09."
+    },
+    {
+      "id": "project-13",
+      "status": "completed",
+      "category": "industry",
+      "title": "디지털트윈 비전 시뮬레이터 기반 선박 조립블록 하부도장 경로생성 기술 연구",
+      "program": "삼성중공업",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2023.03",
+        "end": "2023.11"
+      },
+      "budget": {
+        "amount": "27,500",
+        "unit": "천원"
+      },
+      "keywords": [
+        "Digital Twin",
+        "Optimization",
+        "Computer Vision"
+      ],
+      "description": "현재, 선박 조립블록 하부도장 작업은 숙련된 전문인력이 자신의 노하우를 기반으로 직접 도장액 분사 또는 작업차량을 조작하는 형태로 수행되므로 상당한 시간과 비용이 소요되고 있다. 본 연구실에서는 블록 하부도장 자동화차량 경로 설정을 위한 디지털트윈 시뮬레이터 기반 블록표면 영상처리 기술을 개발한다. 구체적으로는, 다중 카메라 around view, 블록하부 환경 인식, 작업경로 연산, 실시간 경로이탈 감지·복구제어 기술을 개발한다.",
+      "details": [
+        "디지털트윈 시뮬레이터에서 생성된 다중 카메라 영상 기반 around view 구성",
+        "딥러닝 기반 블록표면 도장기준선 및 장애물 감지 모델 설계",
+        "도장기준선 기반 실시간 주행방향 연산, 연속도장 제어, 경로이탈 감지, 복구제어 기술 개발",
+        "실제 도장차량 모터에 대한 디지털트윈화 및 디지털트윈 제어신호 기반 시뮬레이션 수행"
+      ],
+      "images": [],
+      "rawMeta": "삼성중공업 | 27,500 (천원) | 2023.03. - 2023.11."
+    },
+    {
+      "id": "project-14",
+      "status": "completed",
+      "category": "rnd",
+      "title": "건설기계 초저지연 원격제어 기술 개발",
+      "program": "건설기계부품연구원",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2021.09",
+        "end": "2023.10"
+      },
+      "budget": {
+        "amount": "31,000",
+        "unit": "천원"
+      },
+      "keywords": [
+        "Computer Vision"
+      ],
+      "description": "건설현장 중장비 원격제어 기술은 영상 스트리밍 및 제어신호 전송 시 발생하는 네트워크 지연으로 인해 실시간성이 보장되지 않고 있다. 본 과제를 통해 안전성, 작업효율성 및 생산성 극대화를 위해 WebRTC 기반 건설기계 초저지연 원격제어 기술을 개발한다.",
+      "details": [
+        "WebRTC (janus gateway) 기반 원격제어 및 안전거리 경고 Native Application 개발",
+        "초저지연 원격제어를 위한 WebSocket 기반 제어신호 송수신 기술 개발",
+        "초광대역 영상 실시간 스트리밍을 위한 프로토콜 및 게이트웨이 구현"
+      ],
+      "images": [],
+      "rawMeta": "건설기계부품연구원 | 31,000 (천원) | 2021.09. - 2023.10."
+    },
+    {
+      "id": "project-15",
+      "status": "completed",
+      "category": "rnd",
+      "title": "UWB RTLS 기반 디지털트윈 반려동물 모니터링 기술 개발",
+      "program": "중기부-TIPA",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2022.07",
+        "end": "2023.06"
+      },
+      "budget": {
+        "amount": "123,340",
+        "unit": "천원"
+      },
+      "keywords": [
+        "Digital Twin",
+        "Computer Vision",
+        "Energy Systems"
+      ],
+      "description": "기존의 카메라 영상 기반 반려동물 모니터링 기술은 가구나 벽 등에 의한 사각지대 발생이 불가피하고, 개체 식별 및 추적 등 상시 영상처리를 수행해야 하므로 전력 소모량이 높으며 영상 유출과 같은 심각한 보안 문제 발생의 우려도 존재한다. 본 연구실에서는 UWB 기반 Indoor RTLS 정확도 향상 기법을 연구하여 반려동물 실시간 위치를 디지털트윈 공간 상에서 모니터링할 수 있는 기술을 제공한다. 또한 정교한 반려동물 위치 기록을 분석하여 반려동물의 개체별 건강상태, 휴식 및 활동수준 등을 제공하고자 한다.",
+      "details": [
+        "UWB Indoor RTLS 구현을 위한 삼변측량기법 연구",
+        "UWB anchor 3D position에 따른 2D 위치 오차 감소기법 연구",
+        "디지털트윈 구현 및 실시간 위치 동기화 기법 연구"
+      ],
+      "images": [],
+      "rawMeta": "중기부-TIPA | 123,340 (천원) | 2022.07. - 2023.06."
+    },
+    {
+      "id": "project-16",
+      "status": "completed",
+      "category": "rnd",
+      "title": "클라우드 VR의 MTP 지연 감소를 위한 서비스 지향 엣지 컴퓨팅 프로비저닝 알고리즘 연구",
+      "program": "한국연구재단",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2020.03",
+        "end": "2023.02"
+      },
+      "budget": {
+        "amount": "90,000",
+        "unit": "천원"
+      },
+      "keywords": [],
+      "description": "본 연구에서는 엣지 컴퓨팅 환경에서 클라우드 VR 서비스들의 MTP 지연 감소를 위한 서비스 지향 리소스 프로비저닝 알고리즘을 연구하였다. VR 서비스는 다양한 트래픽 패턴(고화질, HMD/컨트롤러/시선 등 입력 신호 주기, 지연시간), 서비스 요구사항(3DoF/6DoF, 입력 장치 종류, 다중 사용자), 사용자 경험(지연시간 및 해상도 임계점)과 같은 다양한 특성을 가지므로, 이러한 서비스별 컨텍스트를 분석하여 서버 인스턴스를 계층화/분산화하고 MTP Latency를 최소화하도록 리소스를 프로비저닝하는 알고리즘을 연구하였다.",
+      "details": [
+        "동작 컨텍스트 기반 서비스 지향 리소스 프로비저닝 알고리즘 연구",
+        "공유 리소스 및 동기화 기반 서비스 지향 리소스 프로비저닝 휴리스틱 알고리즘 연구",
+        "다중 사용자 클라우드 VR 프로세스 동작 연구"
+      ],
+      "images": [],
+      "rawMeta": "한국연구재단 | 90,000 (천원) | 2020.03. - 2023.02."
+    },
+    {
+      "id": "project-17",
+      "status": "completed",
+      "category": "industry",
+      "title": "디지털트윈 기반 조선소 야드 통합관제 시스템 구축",
+      "program": "삼성중공업",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2020.05",
+        "end": "2022.06"
+      },
+      "budget": {
+        "amount": "114,000",
+        "unit": "천원"
+      },
+      "keywords": [
+        "Digital Twin",
+        "Energy Systems"
+      ],
+      "description": "조선소 내 고위험·고정밀 작업을 안전하고 효율적으로 운영하기 위해 디지털트윈 기반 실시간 모니터링·원격제어 기술을 개발한다. 본 과제에서는 도면 및 실측 데이터 기반 low-poly 3D 모델링/텍스처 제작, 모든 공정을 한 화면에서 파악할 수 있는 디지털트윈 공간 구축, 데이터 가공을 통한 저지연 동기화 기술, 사용성을 고려한 다양한 UI/UX 제어 시스템 등을 개발하여 작업 현장에 적용하였다.",
+      "details": [
+        "삼성중공업 거제조선소 절단+소조립 야드 디지털트윈 통합관제 시스템 구축",
+        "설비 CAD 도면 및 야드 실측 데이터 분석 후 3D 모델링/텍스처 제작 시각화 후 조선소 공장 전체 환경 모니터링",
+        "각 장비 별 현재 장비 상태, 특정일 공정 스케줄 & 라인별 목표 달성률, 기간별 공정 스케줄 지연 등 작업 현황 파악",
+        "설비 운용현황, 에너지 사용량 등 현장지표 모니터링"
+      ],
+      "images": [],
+      "rawMeta": "삼성중공업 | 114,000 (천원) | 2020.05. - 2022.06."
+    },
+    {
+      "id": "project-18",
+      "status": "completed",
+      "category": "rnd",
+      "title": "오픈소스 기반 디지털트윈 시스템 개발",
+      "program": "포항테크노파크",
+      "sponsor": "",
+      "managingAgency": "",
+      "period": {
+        "start": "2020.07",
+        "end": "2021.12"
+      },
+      "budget": {
+        "amount": "479,600",
+        "unit": "천원"
+      },
+      "keywords": [
+        "Digital Twin"
+      ],
+      "description": "최근 디지털트윈 기술이 화재, 지진과 같은 재난 감시 분야에 적합한 기술로 각광받고 있다. 따라서 본 과제에서는 재난 감시 디지털 트윈을 설계하고, 이를 위한 디지털 트윈 시스템의 요소 기술을 구현한다.",
+      "details": [
+        "UWB 및 드론매핑 기반 디지털트윈 3D 소스 데이터 컨버팅 시스템 개발",
+        "목조 건물 화재 위험도 예측 지수 개발"
+      ],
+      "images": [],
+      "rawMeta": "포항테크노파크 | 479,600 (천원) | 2020.07. - 2021.12."
+    }
+  ]
+}

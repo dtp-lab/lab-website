@@ -4,6 +4,8 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * 1"
 
 permissions:
   contents: read
@@ -28,6 +30,20 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+
+      - name: Test citation updater
+        run: node tools/test-refresh-citations.mjs
+
+      - name: Refresh Semantic Scholar citations
+        env:
+          SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+        run: node tools/refresh-citations.mjs
+
+      - name: Validate content data
+        run: node tools/validate-content.mjs
+
+      - name: Check internal links and headings
+        run: node tools/check-links.mjs
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v3

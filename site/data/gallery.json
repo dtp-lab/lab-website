@@ -1,0 +1,60 @@
+{
+  "source": "https://sites.google.com/view/dtnlab/gallery",
+  "events": [
+    {
+      "date": "2025.11",
+      "title": "연구실 이사",
+      "description": "자연대연구실험동 → IT관 이사한 후",
+      "images": []
+    },
+    {
+      "date": "2025.11",
+      "title": "AI대학원 학생주도연구프로젝트 시상식",
+      "description": "장려상 수상(김정호)",
+      "images": []
+    },
+    {
+      "date": "2025.07",
+      "title": "MITA 2025",
+      "description": "MITA 국제학술대회 구두 발표(최호진, 이지혜)",
+      "images": []
+    },
+    {
+      "date": "2025.07",
+      "title": "KCC 2025 & 연구실 MT",
+      "description": "한국컴퓨터종합학술대회 참석 및 연구실 MT",
+      "images": []
+    },
+    {
+      "date": "2025.03",
+      "title": "연구실 사진",
+      "description": "dtnlab 연구실 대청소 후",
+      "images": []
+    },
+    {
+      "date": "2024.06",
+      "title": "KCC 2024",
+      "description": "한국컴퓨터종합학술대회 구두 발표(최호진) 및 포스터 발표(김정호) 참석",
+      "images": []
+    },
+    {
+      "date": "2024.01",
+      "title": "KJCCS 2024",
+      "description": "10th Anniversary Korea-Japan Joint Workshop on Complex Communication Sciences (KJCCS 2024) 국제 학술 대회 구두 발표(안현기) 및 회의 참석",
+      "images": []
+    },
+    {
+      "date": "2023.10",
+      "title": "Unity APAC",
+      "description": "2023 디지털트윈 동향 파악을 위한 Unity APAC online 참석",
+      "images": []
+    },
+    {
+      "date": "2022.11",
+      "title": "TECHWEEK",
+      "description": "2022 TECHWEEK 활동최호진, 안현기 연구원 수상",
+      "images": []
+    }
+  ],
+  "migrated": "2026-07-17"
+}

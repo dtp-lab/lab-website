@@ -1,0 +1,246 @@
+{
+  "source": "https://sites.google.com/view/dtnlab",
+  "migrated": "2026-07-17",
+  "news": [
+    {
+      "date": "2026.04",
+      "category": "project",
+      "text": "Isaac Sim-PhysX 물리엔진과 강화학습을 통한 세탁성능 시뮬레이션 기술 개발 연구과제 수주 (LG전자, 12개월)"
+    },
+    {
+      "date": "2026.04",
+      "category": "publication",
+      "text": "고은성, \"VLM-Guided Zero-shot Sim2Real 드론영상 산불라인 추정 연구,\" ICPR-2026(BK우수국제학회 IF1) Accepted"
+    },
+    {
+      "date": "2026.03",
+      "category": "publication",
+      "text": "DTPLAB - LG전자 HS사업본부 Target Lab 선정, 연구실원 LG전자 산학장학생 지원 시 우대"
+    },
+    {
+      "date": "2026.03",
+      "category": "project",
+      "text": "CCTV 작업자 인식을 통한 디지털트윈 동기화 기술 개발 연구과제 수주 (삼성중공업, 8개월)"
+    },
+    {
+      "date": "2026.03",
+      "category": "project",
+      "text": "Digital-X AIoT (Physical AI) 연구센터 합류 (과기부, 90개월)"
+    },
+    {
+      "date": "2026.03",
+      "category": "member",
+      "text": "이지혜 박사과정 진학 | 하서현 석사과정 진학 | 김범수 학부연구생 합류"
+    },
+    {
+      "date": "2026.02",
+      "category": "award",
+      "text": "이창민, BK21 참여대학원생 우수연구상 우수상 수상"
+    },
+    {
+      "date": "2026.02",
+      "category": "member",
+      "text": "홍석기, 홍세민, 윤태호 학부연구생 합류"
+    },
+    {
+      "date": "2026.01",
+      "category": "publication",
+      "text": "김민재, 최호진, \"브랜치 병렬 시뮬레이티드 어닐링 기반 다중 압축기 운영 에너지 효율 최적화 기법 연구,\" SCIE-Q2 논문 출판"
+    },
+    {
+      "date": "2026.01",
+      "category": "member",
+      "text": "김성민, 여채언, 옥소미 학부연구생 합류"
+    },
+    {
+      "date": "2025.12",
+      "category": "publication",
+      "text": "이창민, \"배타적 블록 및 화물 관계성 기반 RoRo 선박 화물 선적 최적화 기법 연구,\" SCIE-Q1 논문 출판"
+    },
+    {
+      "date": "2025.11",
+      "category": "member",
+      "text": "하서현 학부연구생 합류"
+    },
+    {
+      "date": "2025.11",
+      "category": "award",
+      "text": "김정호, 부산대학교 AI대학원 학생주도연구프로젝트 장려상 수상"
+    },
+    {
+      "date": "2025.11",
+      "category": "publication",
+      "text": "김원석, \"전기차 열관리 효율 최적화 기법 연구,\" SCIE-Q1 논문 출판"
+    },
+    {
+      "date": "2025.10",
+      "category": "publication",
+      "text": "김원석, \"AI 기반 연료전지 시스템 설계 최적화 기법 연구,\" SCIE-Q1(Top-Tier, JCR 5%) 논문 출판"
+    },
+    {
+      "date": "2025.10",
+      "category": "project",
+      "text": "RoRo 선박 화물 선적 계획을 위한 화물 배치 최적화 알고리즘 개발(2차) 연구과제 수주 (TSB, 13개월)"
+    },
+    {
+      "date": "2025.09",
+      "category": "project",
+      "text": "조선소 용접로봇 자동화를 위한 디지털트윈 비전 합성데이터 생성·활용 고도화 기술(2차) 연구과제 수주 (삼성중공업, 4개월)"
+    },
+    {
+      "date": "2025.09",
+      "category": "project",
+      "text": "디지털트윈 모델 기반 강화학습을 활용한 특수목적용 로봇 제어 기술 연구 연구과제 수주 (교육부, 53개월)"
+    },
+    {
+      "date": "2025.09",
+      "category": "member",
+      "text": "최현석(중소조선연구원(RIMS)) 박사과정 진학 | 김민재, 이창주 석사과정 진학"
+    },
+    {
+      "date": "2025.06",
+      "category": "project",
+      "text": "디지털트윈 기반 실시간 스마트야드 모니터링·원격제어 시스템 구축(3차) 연구과제 수주 (삼성중공업, 7개월)"
+    },
+    {
+      "date": "2025.06",
+      "category": "project",
+      "text": "강화학습 기반 선박 조립 블록 배치 최적화 기술 개발 연구과제 수주 (한화오션, 9개월)"
+    },
+    {
+      "date": "2025.03",
+      "category": "member",
+      "text": "최호진 박사과정 진학 | 이창민, 고은성 석사과정 진학 | 김민재 학부연구생 합류"
+    },
+    {
+      "date": "2025.03",
+      "category": "publication",
+      "text": "최호진, \"멀티유저 클라우드 VR을 위한 컨테이너 오케스트레이션 연구,\" SCIE-Q2 논문 출판"
+    },
+    {
+      "date": "2025.01",
+      "category": "project",
+      "text": "조선소 용접로봇 자동화를 위한 디지털트윈 비전 합성데이터 생성·활용 고도화 기술 연구과제 수주 (삼성중공업, 8개월)"
+    },
+    {
+      "date": "2024.10",
+      "category": "publication",
+      "text": "김정호, 안현기, \"실내 위치추적 보정을 위한 오차편차맵 기반 그래프 탐색 연구,\" SCIE-Q2 논문 출판"
+    },
+    {
+      "date": "2024.09",
+      "category": "member",
+      "text": "김준원(국방과학연구소(ADD)) 박사과정 진학"
+    },
+    {
+      "date": "2024.08",
+      "category": "project",
+      "text": "디지털트윈 기반 실시간 스마트야드 모니터링·원격제어 시스템 구축(2차) 연구과제 수주 (삼성중공업, 7개월)"
+    },
+    {
+      "date": "2024.08",
+      "category": "publication",
+      "text": "최호진, \"멀티유저 클라우드 VR을 위한 MSA 프로비저닝 연구,\" SCIE-Q2 논문 출판"
+    },
+    {
+      "date": "2024.06",
+      "category": "publication",
+      "text": "김희준, 김정호, \"아크센싱 정확도 향상을 위한 전류 중앙값 기반 데이터 클러스터링 연구,\" SCIE-Q2 논문 출판"
+    },
+    {
+      "date": "2024.06",
+      "category": "award",
+      "text": "최호진, 한국정보과학회 한국컴퓨터종합학술대회(KCC 2024) Best Paper Awarded"
+    },
+    {
+      "date": "2024.05",
+      "category": "project",
+      "text": "디지털트윈 공간 기반 3D 교육훈련 VR/AR 콘텐츠 저작기술 개발 연구과제 수주 (부산테크노파크, 8개월)"
+    },
+    {
+      "date": "2024.04",
+      "category": "project",
+      "text": "디지털트윈 및 강화학습 기반 스마트팩토리 소모전력 최적화 기법 연구과제 수주 (과기부/LG디스플레이, 21개월)"
+    },
+    {
+      "date": "2024.03",
+      "category": "project",
+      "text": "조선소 용접로봇 자동화를 위한 디지털트윈 비전 합성데이터 생성·활용 기술 연구과제 수주 (삼성중공업, 8개월)"
+    },
+    {
+      "date": "2024.03",
+      "category": "project",
+      "text": "RoRo 선박 화물 선적 계획을 위한 화물 배치 최적화 알고리즘 개발 연구과제 수주 (TSB, 7개월)"
+    },
+    {
+      "date": "2024.03",
+      "category": "member",
+      "text": "김정호, 이지혜 석사과정 진학"
+    },
+    {
+      "date": "2024.01",
+      "category": "award",
+      "text": "안현기, 김정호, KJCCS 2024 Best Paper Awarded"
+    },
+    {
+      "date": "2023.08",
+      "category": "member",
+      "text": "이지혜, 이창민 학부연구생 합류"
+    },
+    {
+      "date": "2023.06",
+      "category": "project",
+      "text": "드론 영상 기반 산불 정보 인식을 위한 디지털트윈 시뮬레이터 및 합성데이터 생성·활용 기술 연구 연구과제 수주 (산자부, 55개월)"
+    },
+    {
+      "date": "2023.04",
+      "category": "project",
+      "text": "강화학습 기반 전기차 통합열관리 PI/MRAC 제어시스템 효율 최적화 기법 연구과제 수주 (산자부, 21개월)"
+    },
+    {
+      "date": "2023.03",
+      "category": "project",
+      "text": "디지털트윈 비전 시뮬레이터 기반 선박 조립블록 하부도장 경로생성 기술 연구과제 수주 (삼성중공업, 9개월)"
+    },
+    {
+      "date": "2023.03",
+      "category": "project",
+      "text": "디지털트윈 기반 실시간 스마트야드 모니터링·원격제어 시스템 구축(1차) 연구과제 수주 (삼성중공업, 9개월)"
+    },
+    {
+      "date": "2023.03",
+      "category": "member",
+      "text": "안현기, 최호진 석사과정 진학, 김정호 학부연구생 합류"
+    },
+    {
+      "date": "2022.11",
+      "category": "project",
+      "text": "건설기계 초저지연 원격제어 기술 개발 연구과제 수주 (건설기계부품연구원, 9개월)"
+    },
+    {
+      "date": "2022.09",
+      "category": "member",
+      "text": "김희준(삼성중공업) 석사과정 진학"
+    },
+    {
+      "date": "2022.07",
+      "category": "award",
+      "text": "안현기, MITA 2022 Best Paper Awarded"
+    },
+    {
+      "date": "2022.07",
+      "category": "project",
+      "text": "UWB RTLS 기반 디지털트윈 반려동물 모니터링 기술 개발 연구과제 수주 (중기부, 12개월)"
+    },
+    {
+      "date": "2022.05",
+      "category": "member",
+      "text": "안현기, 최호진 학부연구생 합류"
+    },
+    {
+      "date": "2022.03",
+      "category": "member",
+      "text": "홈페이지 개설"
+    }
+  ]
+}
