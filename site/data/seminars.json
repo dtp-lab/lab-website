@@ -5,439 +5,714 @@
       "date": "2026.03.09",
       "title": "ORSO: Accelerating Reward Design via Online Reward Selection and Policy Optimization",
       "speaker": "이창민",
-      "summary": "본 세미나는 일반적인 Reward Shaping 문제를 Reward Selection 문제로 변환하는 ORSO에 대해 소개한다. Generator로 reward function pool을 생성하고, Online Model Selection 알고리즘(Selection Strategy)을 통해 어떤 reward function을 많이 학습 시킬지 탐색한다. 이러한 접근 방식은 하나의 reward function을 학습하는 시간에, 같은 시간 내에 다양한 reward function을 다양하게 학습 시켜볼 수 있다는 장점이 있다."
+      "summary": "본 세미나는 일반적인 Reward Shaping 문제를 Reward Selection 문제로 변환하는 ORSO에 대해 소개한다. Generator로 reward function pool을 생성하고, Online Model Selection 알고리즘(Selection Strategy)을 통해 어떤 reward function을 많이 학습 시킬지 탐색한다. 이러한 접근 방식은 하나의 reward function을 학습하는 시간에, 같은 시간 내에 다양한 reward function을 다양하게 학습 시켜볼 수 있다는 장점이 있다.",
+      "keywords": [
+        "Reinforcement Learning",
+        "Optimization"
+      ]
     },
     {
       "date": "2026.03.03",
       "title": "Function Approximation in Reinforcement Learning",
       "speaker": "하서현",
-      "summary": "본 세미나는 대규모 상태 공간에서 강화학습을 구현하기 위한 함수 근사(Function Approximation)의 원리와 안정성 문제, 그리고 이를 해결하는 이론적 접근을 다룬다. 특히, 함수 근사에 Bootstrapping과 Off-Policy Learning이 결합될 때 발생하는 Deadly Triad 문제를 분석하고, 이를 완화하기 위해 Projection을 도입하여 수렴성을 이론적으로 보장하는 Gradient TD 기법을 살펴본다. 이어 Bias-Variance Trade-Off를 조절하기 위한 방법 중 하나인 λ-Return을 소개하고, 이를 Online 환경에서 구현할 수 있도록 하는 Eligibility Trace 기반 Backward View 메커니즘을 설명한다. 이는 미래 정보를 직접 기다리지 않으면서도 동일한 학습 효과를 재현하는 구조적 전환을 보여준다. 마지막으로 가치 추정을 통해 정책을 간접적으로 개선하는 Value-Based 방식에서 벗어나, 정책을 직접 최적화하는 Policy-Based 방식의 이점을 정리한다. 아울러 고분산 문제를 완화하기 위해 가치 함수를 기준점(Baseline)으로 설정하여 정책 Update를 안정화하는 Actor-Critic 구조의 효율성을 조망하며 마무리한다."
+      "summary": "본 세미나는 대규모 상태 공간에서 강화학습을 구현하기 위한 함수 근사(Function Approximation)의 원리와 안정성 문제, 그리고 이를 해결하는 이론적 접근을 다룬다. 특히, 함수 근사에 Bootstrapping과 Off-Policy Learning이 결합될 때 발생하는 Deadly Triad 문제를 분석하고, 이를 완화하기 위해 Projection을 도입하여 수렴성을 이론적으로 보장하는 Gradient TD 기법을 살펴본다. 이어 Bias-Variance Trade-Off를 조절하기 위한 방법 중 하나인 λ-Return을 소개하고, 이를 Online 환경에서 구현할 수 있도록 하는 Eligibility Trace 기반 Backward View 메커니즘을 설명한다. 이는 미래 정보를 직접 기다리지 않으면서도 동일한 학습 효과를 재현하는 구조적 전환을 보여준다. 마지막으로 가치 추정을 통해 정책을 간접적으로 개선하는 Value-Based 방식에서 벗어나, 정책을 직접 최적화하는 Policy-Based 방식의 이점을 정리한다. 아울러 고분산 문제를 완화하기 위해 가치 함수를 기준점(Baseline)으로 설정하여 정책 Update를 안정화하는 Actor-Critic 구조의 효율성을 조망하며 마무리한다.",
+      "keywords": [
+        "Reinforcement Learning"
+      ]
     },
     {
       "date": "2026.02.23",
       "title": "MRFP: Learning Generalizable Semantic Segmentation from Sim-2-Real with Multi-Resolution Feature Perturbation",
       "speaker": "고은성",
-      "summary": "해당 세미나는 semantic segmentation에서 synthetic source domain으로 학습한 모델이 domain gap으로 인해 real target domain에 잘 일반화되지 않는 문제를 해결하는 것을 목표로 한다. 이를 해결하기 위해 저자들은 Multi-Resolution Feature Perturbation(MRFP)라는 방법을 제안하였으며, 이는 네트워크의 feature 공간에서 coarse feature의 style 정보와 fine-grained feature를 의도적으로 perturbation하여 domain-specific 특성에 대한 의존을 줄이고 domain-invariant feature를 학습하도록 유도한다. 그 결과 다양한 segmentation 데이터셋에서 synthetic-to-real generalization 성능이 향상되었으며, MRFP는 추가적인 학습 파라미터나 별도의 loss 없이 다른 네트워크에서도 간단히 적용할 수 있는 효율적인 모듈임을 보여준다."
+      "summary": "해당 세미나는 semantic segmentation에서 synthetic source domain으로 학습한 모델이 domain gap으로 인해 real target domain에 잘 일반화되지 않는 문제를 해결하는 것을 목표로 한다. 이를 해결하기 위해 저자들은 Multi-Resolution Feature Perturbation(MRFP)라는 방법을 제안하였으며, 이는 네트워크의 feature 공간에서 coarse feature의 style 정보와 fine-grained feature를 의도적으로 perturbation하여 domain-specific 특성에 대한 의존을 줄이고 domain-invariant feature를 학습하도록 유도한다. 그 결과 다양한 segmentation 데이터셋에서 synthetic-to-real generalization 성능이 향상되었으며, MRFP는 추가적인 학습 파라미터나 별도의 loss 없이 다른 네트워크에서도 간단히 적용할 수 있는 효율적인 모듈임을 보여준다.",
+      "keywords": [
+        "Sim2Real",
+        "Computer Vision"
+      ]
     },
     {
       "date": "2026.02.02",
       "title": "PDE-Refiner: Achieving Accurate Long Rollouts with Neural PDE Solvers",
       "speaker": "이지혜",
-      "summary": "본 세미나는 기존 surrogate model이 autoregressive 방식으로 동작하는 과정에서 오차가 누적되어 장기 예측 성능이 저하되는 문제를 다룬 PDE-Refiner를 소개한다. PDE 모델링 문제는 계산 비용이 매우 크기 때문에, 딥신경망 기반 surrogate model에 대한 연구가 활발히 진행되고 있다. 신경망 기반 PDE 해법이 실제로 유용하려면, 장시간 예측 구간에서도 정확하고 안정적인 결과를 제공할 수 있어야 한다. 본 논문은 장기 예측 성능이 저하되는 원인으로, 신경망 솔버가 진폭이 작은 비지배적 주파수 성분을 충분히 학습하지 못하는 현상을 지적한다. 또한 이러한 문제를 해결하기 위해, 전체 주파수 스펙트럼에 대해 정확한 예측을 얻는 것을 목표로 반복적인 refinement 과정을 사용하는 새로운 모델 계열인 PDE-Refiner를 제안한다. PDE-Refiner의 refinement 단계는 diffusion model의 denoising 아이디어를 활용하며, 그 결과 기존 모델들에 비해 롤아웃 정확도가 크게 향상되었음을 보인다."
+      "summary": "본 세미나는 기존 surrogate model이 autoregressive 방식으로 동작하는 과정에서 오차가 누적되어 장기 예측 성능이 저하되는 문제를 다룬 PDE-Refiner를 소개한다. PDE 모델링 문제는 계산 비용이 매우 크기 때문에, 딥신경망 기반 surrogate model에 대한 연구가 활발히 진행되고 있다. 신경망 기반 PDE 해법이 실제로 유용하려면, 장시간 예측 구간에서도 정확하고 안정적인 결과를 제공할 수 있어야 한다. 본 논문은 장기 예측 성능이 저하되는 원인으로, 신경망 솔버가 진폭이 작은 비지배적 주파수 성분을 충분히 학습하지 못하는 현상을 지적한다. 또한 이러한 문제를 해결하기 위해, 전체 주파수 스펙트럼에 대해 정확한 예측을 얻는 것을 목표로 반복적인 refinement 과정을 사용하는 새로운 모델 계열인 PDE-Refiner를 제안한다. PDE-Refiner의 refinement 단계는 diffusion model의 denoising 아이디어를 활용하며, 그 결과 기존 모델들에 비해 롤아웃 정확도가 크게 향상되었음을 보인다.",
+      "keywords": [
+        "Scientific Machine Learning"
+      ]
     },
     {
       "date": "2026.01.26",
       "title": "Introduction to Reinforcement Learning",
       "speaker": "하서현",
-      "summary": "본 세미나는 강화학습의 목적과 주요 개념을 정리하고, 대표적인 알고리즘들의 작동 원리를 다룬다. 강화학습의 이론적 근간인 Bellman Equation을 바탕으로 환경 모델의 유무, Update 시점/방식에 따른 DP, MC, TD의 차이를 비교한다. 이어 Target Policy와 Behavior Policy의 일치 여부에 따라 구분되는 On-Policy와 Off-Policy의 학습 전략을 분석한다. 또한, 서로 다른 가치 추정 기법을 하나의 틀로 통합하는 n-Step Bootstrapping의 기본 원리를 살펴본다. 나아가 Model-Based RL까지 범위를 확장하여, 대표적 접근인 World Model과 Model-Free 및 Model-Based의 특성을 함께 반영한 I2A(Imagination-Augmented Agents)를 탐구한다. 이를 통해 강화학습의 발전과 확장에 대한 흐름을 조망한다. 이처럼 본 세미나는 강화학습의 핵심 메커니즘 전반을 개념적 흐름 속에서 소개하는 것을 목적으로 한다."
+      "summary": "본 세미나는 강화학습의 목적과 주요 개념을 정리하고, 대표적인 알고리즘들의 작동 원리를 다룬다. 강화학습의 이론적 근간인 Bellman Equation을 바탕으로 환경 모델의 유무, Update 시점/방식에 따른 DP, MC, TD의 차이를 비교한다. 이어 Target Policy와 Behavior Policy의 일치 여부에 따라 구분되는 On-Policy와 Off-Policy의 학습 전략을 분석한다. 또한, 서로 다른 가치 추정 기법을 하나의 틀로 통합하는 n-Step Bootstrapping의 기본 원리를 살펴본다. 나아가 Model-Based RL까지 범위를 확장하여, 대표적 접근인 World Model과 Model-Free 및 Model-Based의 특성을 함께 반영한 I2A(Imagination-Augmented Agents)를 탐구한다. 이를 통해 강화학습의 발전과 확장에 대한 흐름을 조망한다. 이처럼 본 세미나는 강화학습의 핵심 메커니즘 전반을 개념적 흐름 속에서 소개하는 것을 목적으로 한다.",
+      "keywords": [
+        "Reinforcement Learning"
+      ]
     },
     {
       "date": "2026.01.26",
       "title": "Dreamer v1 Deep-Dive",
       "speaker": "김민재",
-      "summary": "World Model은 2018년, David Ha에 의해서 제안된 Model-Based Reinforcement Learning에 대한 새로운 방법론이다. World Model은 환경의 동역학을 학습하여, 계산량이 높은 컴퓨팅 시뮬레이션이나, 실제 환경을 직접 실행하지 않고 데이터를 수집하고, 모델을 학습시키기 위한 프레임워크를 제시한다. 이번 세미나에서는 World Model을 이용해 최초로 시연 데이터 없이 마인크래프트 환경 다이아몬드 획득 과제를 해결한 Dreamer v3 알고리즘의 원형, Dreamer v1의 구조를 파헤친다. 이를 위해, World Models → PlaNet → Dreamer v1으로의 발전 과정을 V-M-C 구조의 구현과 변형을 이해하고, 학습-추론 방식에 대해 탐구한다."
+      "summary": "World Model은 2018년, David Ha에 의해서 제안된 Model-Based Reinforcement Learning에 대한 새로운 방법론이다. World Model은 환경의 동역학을 학습하여, 계산량이 높은 컴퓨팅 시뮬레이션이나, 실제 환경을 직접 실행하지 않고 데이터를 수집하고, 모델을 학습시키기 위한 프레임워크를 제시한다. 이번 세미나에서는 World Model을 이용해 최초로 시연 데이터 없이 마인크래프트 환경 다이아몬드 획득 과제를 해결한 Dreamer v3 알고리즘의 원형, Dreamer v1의 구조를 파헤친다. 이를 위해, World Models → PlaNet → Dreamer v1으로의 발전 과정을 V-M-C 구조의 구현과 변형을 이해하고, 학습-추론 방식에 대해 탐구한다.",
+      "keywords": [
+        "World Models",
+        "Reinforcement Learning"
+      ]
     },
     {
       "date": "2026.01.19",
       "title": "Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor",
       "speaker": "이창주",
-      "summary": "maximum entropy를 objective function에 넣어 Actor-Critic을 구현한 논문에 대해서 소개한다. entropy를 통하여, 탐색을 장려해 복잡한 task에서 학습의 안정성 및 속도를 높인다. 그리고 double Q-function 및 Exponential Moving Average(soft update) 방식을 활용한 별도의 Target Network 업데이트와 같은 학습 안정화 장치를 활용해 학습의 안정성을 더욱 높였다. 이 덕분에 현재까지도, continuous action space에서 보편적으로 사용되는 강화학습 알고리즘으로 자리 잡았다."
+      "summary": "maximum entropy를 objective function에 넣어 Actor-Critic을 구현한 논문에 대해서 소개한다. entropy를 통하여, 탐색을 장려해 복잡한 task에서 학습의 안정성 및 속도를 높인다. 그리고 double Q-function 및 Exponential Moving Average(soft update) 방식을 활용한 별도의 Target Network 업데이트와 같은 학습 안정화 장치를 활용해 학습의 안정성을 더욱 높였다. 이 덕분에 현재까지도, continuous action space에서 보편적으로 사용되는 강화학습 알고리즘으로 자리 잡았다.",
+      "keywords": [
+        "Reinforcement Learning"
+      ]
     },
     {
       "date": "2026.01.12",
       "title": "Denoising Diffusion Probabilistic Models",
       "speaker": "최호진",
-      "summary": "Diffusion Model의 기본 개념부터 시작하여 최근에 사용되는 신경망 기반 Diffusion Model의 기본이 되는 논문에 대해서 소개한다. Diffusion Model의 노이즈를 추가하고 노이즈를 조금조금씩 제거해나가면서 원본 이미지 혹은 데이터 패턴을 생성하기 위해서 어떻게 방식으로 이루어지는지에 대해서 알아보고 Loss function의 구조 및 의미를 알아본다. Diffusion Model의 Loss function으로부터 DDPM으로 넘어오면서 Loss function이 어떻게 변화되었어 적용되었는지까지 소개한다. 마지막으로 Diffusion Model의 활용 방안에 대해서 알아보고 연구 트렌드가 어떻게 되는지까지 알아보았다."
+      "summary": "Diffusion Model의 기본 개념부터 시작하여 최근에 사용되는 신경망 기반 Diffusion Model의 기본이 되는 논문에 대해서 소개한다. Diffusion Model의 노이즈를 추가하고 노이즈를 조금조금씩 제거해나가면서 원본 이미지 혹은 데이터 패턴을 생성하기 위해서 어떻게 방식으로 이루어지는지에 대해서 알아보고 Loss function의 구조 및 의미를 알아본다. Diffusion Model의 Loss function으로부터 DDPM으로 넘어오면서 Loss function이 어떻게 변화되었어 적용되었는지까지 소개한다. 마지막으로 Diffusion Model의 활용 방안에 대해서 알아보고 연구 트렌드가 어떻게 되는지까지 알아보았다.",
+      "keywords": [
+        "Generative AI"
+      ]
     },
     {
       "date": "2025.10.20",
       "title": "DayDreamer: World Model for Physical Robot Learning",
       "speaker": "이창주",
-      "summary": "\"Dreamer\" 모델은 카메라와 센서를 활용해 세상을 이해하는 데 탁월한 성능을 보였다. 그러나 그 성과는 대부분 비디오 게임과 같은 가상 환경에서만 검증되어왔다. 본 세미나의 논문에서는 \"Dreamer\" 모델을 실제 로봇과 현실 환경에서 테스트하여 성능을 검증하고자 하였다. 실험에서는 로봇의 핵심 동작인 \"이동\", \"물체 조작\", \"길 찾기\"를 수행하며 기존의 최신 기술들과 성능을 비교했다. 그 결과, 1시간 만에 시뮬레이션 없이 4족 보행을 학습하는 등, Dreamer 모델이 실제 환경에서도 뛰어난 성능을 발휘함을 확인할 수 있었다."
+      "summary": "\"Dreamer\" 모델은 카메라와 센서를 활용해 세상을 이해하는 데 탁월한 성능을 보였다. 그러나 그 성과는 대부분 비디오 게임과 같은 가상 환경에서만 검증되어왔다. 본 세미나의 논문에서는 \"Dreamer\" 모델을 실제 로봇과 현실 환경에서 테스트하여 성능을 검증하고자 하였다. 실험에서는 로봇의 핵심 동작인 \"이동\", \"물체 조작\", \"길 찾기\"를 수행하며 기존의 최신 기술들과 성능을 비교했다. 그 결과, 1시간 만에 시뮬레이션 없이 4족 보행을 학습하는 등, Dreamer 모델이 실제 환경에서도 뛰어난 성능을 발휘함을 확인할 수 있었다.",
+      "keywords": [
+        "World Models",
+        "Reinforcement Learning",
+        "Robotics",
+        "Physical AI"
+      ]
     },
     {
       "date": "2025.09.29",
       "title": "Bayesian Optimization of Risk Measures",
       "speaker": "김정호",
-      "summary": "베이지안 최적화는 블랙박스 함수에서 비교적 낮은 비용으로 최적파라미터를 찾는 방법론으로 널리 활용되고 있다. 그러나 환경 불확실성이 존재할 때 기존 BO는 E[F(x,W)] (a.k.a 평균치)를 기반으로 해 최적화가 이뤄지며, 이는 꼬리 위험을 놓치게 돼 High-stakes한 task에는 부적절할 수 있다. 이번에 소개하는 Bayesian Optimization of Risk Measures는 이러한 문제를 고려해, 꼬리 위험을 나타내는 위험지표 ρ(VaR, CVaR)를 최적화 대상 목적으로 하여, 최적 파라미터를 도출한다. 이를 위해 GP모델 설정, 획득 함수 알고리즘, 바뀌는 알고리즘으로 인해 증가하는 계산 비용 절감 등을 수행하며, 이를 수식적으로 풀어낸다. 실험 결과 여러 벤치 마크에서 동일 성능 도달까지 평가 횟수가 대폭 감소함을 보인다."
+      "summary": "베이지안 최적화는 블랙박스 함수에서 비교적 낮은 비용으로 최적파라미터를 찾는 방법론으로 널리 활용되고 있다. 그러나 환경 불확실성이 존재할 때 기존 BO는 E[F(x,W)] (a.k.a 평균치)를 기반으로 해 최적화가 이뤄지며, 이는 꼬리 위험을 놓치게 돼 High-stakes한 task에는 부적절할 수 있다. 이번에 소개하는 Bayesian Optimization of Risk Measures는 이러한 문제를 고려해, 꼬리 위험을 나타내는 위험지표 ρ(VaR, CVaR)를 최적화 대상 목적으로 하여, 최적 파라미터를 도출한다. 이를 위해 GP모델 설정, 획득 함수 알고리즘, 바뀌는 알고리즘으로 인해 증가하는 계산 비용 절감 등을 수행하며, 이를 수식적으로 풀어낸다. 실험 결과 여러 벤치 마크에서 동일 성능 도달까지 평가 횟수가 대폭 감소함을 보인다.",
+      "keywords": [
+        "Optimization"
+      ]
     },
     {
       "date": "2025.09.29",
       "title": "Mamba Linear-Time Sequence Modeling with Selective State Spaces",
       "speaker": "이지혜",
-      "summary": "본 세미나에서는 시퀀스 모델에서 계산량과 메모리 사용의 병목을 줄이기 위한 대안으로 제안된, SSM 계열의 HiPPO, S4 및 Mamba를 소개하였다. S4는 긴 시퀀스에서 효율적인 계산이 가능하다는 장점이 있으나, LTI(Linear Time Invariant) 모델을 가정한다는 한계가 존재한다. 이러한 한계를 극복하기 위해 Selective SSM인 Mamba가 등장하였다. Mamba는 입력에 따라 정보를 저장하거나 무시하는 비율을 동적으로 조절할 수 있는 selection mechanism을 도입하여 SSM의 주요 계수들을 입력에 따른 함수로 학습함으로써 더 유연한 시퀀스 처리가 가능하며 계산 효율성 및 성능을 모두 달성한 모델이다."
+      "summary": "본 세미나에서는 시퀀스 모델에서 계산량과 메모리 사용의 병목을 줄이기 위한 대안으로 제안된, SSM 계열의 HiPPO, S4 및 Mamba를 소개하였다. S4는 긴 시퀀스에서 효율적인 계산이 가능하다는 장점이 있으나, LTI(Linear Time Invariant) 모델을 가정한다는 한계가 존재한다. 이러한 한계를 극복하기 위해 Selective SSM인 Mamba가 등장하였다. Mamba는 입력에 따라 정보를 저장하거나 무시하는 비율을 동적으로 조절할 수 있는 selection mechanism을 도입하여 SSM의 주요 계수들을 입력에 따른 함수로 학습함으로써 더 유연한 시퀀스 처리가 가능하며 계산 효율성 및 성능을 모두 달성한 모델이다.",
+      "keywords": [
+        "Sequence Modeling"
+      ]
     },
     {
       "date": "2025.09.22",
       "title": "Sim2Real-Fire: A Multi-modal Simulation Dataset for Forecast and Backtracking of Real-world Forest Fire",
       "speaker": "고은성",
-      "summary": "본 세미나 논문은 화재의 확산, 그리고 역추적에 대한 task를 시뮬레이터 관점에서 해결을 제시한다. 다양한 시간적, 공간적 정보를 포함시킨 멀티모달 데이터 셋을 제공해주고 크로스 어텐션 구조로 설계된 모델을 통해 입력 데이터간의 상관관계를 잘 학습한 모델을 제시한다. 본 논문은 다양한 시뮬레이터 데이터를 포함시킨 데이터와 어텐션 구조의 모델 설계로 시뮬레이션 데이터만으로 sim2real gap을 상당히 줄인것으로 큰 의미가 있다"
+      "summary": "본 세미나 논문은 화재의 확산, 그리고 역추적에 대한 task를 시뮬레이터 관점에서 해결을 제시한다. 다양한 시간적, 공간적 정보를 포함시킨 멀티모달 데이터 셋을 제공해주고 크로스 어텐션 구조로 설계된 모델을 통해 입력 데이터간의 상관관계를 잘 학습한 모델을 제시한다. 본 논문은 다양한 시뮬레이터 데이터를 포함시킨 데이터와 어텐션 구조의 모델 설계로 시뮬레이션 데이터만으로 sim2real gap을 상당히 줄인것으로 큰 의미가 있다",
+      "keywords": [
+        "Sim2Real",
+        "Synthetic Data",
+        "Multimodal AI"
+      ]
     },
     {
       "date": "2025.09.15",
       "title": "Facing Off World Model Backbones: RNNs, Transformers, and S4",
       "speaker": "김민재",
-      "summary": "지난 몇 년간 Transformers를 대체할 알고리즘으로 주목받고 있는 SSM(State Space Model) 기반 신경망 모델이 등장하고 있다. 그 중 Structured State Space Sequence Model(S4)는 Transformer를 비롯한 기존의 모든 시계열 데이터 처리 알고리즘이 해결하지 못한 Path-X task를 해결한 최초의 알고리즘이다. 본 세미나에서 소개하고자 하는 논문의 저자는 신경망을 통해 실제 환경과 상호작용을 수행하지 않고 “가상의 환경(Imagination)” 속에서 상호작용을 통해 보다 주어진 샘플을 효율적으로 사용하는 World Model에서 S4의 성능을 검증하고자 한다. 각각 모델의 Backbone이 RNN, Transformer, S4인 경우에 대해서 Imagination 시 World Model의 성능을 비교한다. 긴 시계열적 메모리 성능을 요구하는 여러 tasks를 사용해 각각의 backbone의 Imagination 시 실제 환경의 모사 정확도를 측정한다."
+      "summary": "지난 몇 년간 Transformers를 대체할 알고리즘으로 주목받고 있는 SSM(State Space Model) 기반 신경망 모델이 등장하고 있다. 그 중 Structured State Space Sequence Model(S4)는 Transformer를 비롯한 기존의 모든 시계열 데이터 처리 알고리즘이 해결하지 못한 Path-X task를 해결한 최초의 알고리즘이다. 본 세미나에서 소개하고자 하는 논문의 저자는 신경망을 통해 실제 환경과 상호작용을 수행하지 않고 “가상의 환경(Imagination)” 속에서 상호작용을 통해 보다 주어진 샘플을 효율적으로 사용하는 World Model에서 S4의 성능을 검증하고자 한다. 각각 모델의 Backbone이 RNN, Transformer, S4인 경우에 대해서 Imagination 시 World Model의 성능을 비교한다. 긴 시계열적 메모리 성능을 요구하는 여러 tasks를 사용해 각각의 backbone의 Imagination 시 실제 환경의 모사 정확도를 측정한다.",
+      "keywords": [
+        "World Models",
+        "Deep Learning"
+      ]
     },
     {
       "date": "2025.08.11",
       "title": "Sim2Real and Domain Randomization",
       "speaker": "김원석",
-      "summary": "시뮬레이터와 현실 간 분포 불일치(Sim2Real Gap)를 극복하기 위해 제안된 기법 중 Domain Randomization(DR)에 대한 문제 정의와 배경을 소개하였다. DR은 물리, 센서, 환경 파라미터를 무작위로 변화시켜 다양한 상황에 강건한 정책을 학습하며 실제 환경을 randomized 환경으로 간주함으로써 zero-shot transfer를 달성할 수 있다. 하지만 학습 난이도와 연산 비용 증가, 분포 설계의 경험 의존성 등의 태생적 단점을 가지며, 이를 개선하기 위해 파라미터 분포를 조정하는 Guided Domain Randomization(GDR)에 대해 살펴보았다. 구체적으로는 실제 성능 피드백 기반 최적화(bi-level optimization, RL/BO), 메타학습 기반 적응, 실제 데이터 정합(SimOpt, RCAN), 시뮬레이터 데이터 기반 가이드(DeceptionNet, ADR) 등 다양한 변형 기법들을 소개하였다."
+      "summary": "시뮬레이터와 현실 간 분포 불일치(Sim2Real Gap)를 극복하기 위해 제안된 기법 중 Domain Randomization(DR)에 대한 문제 정의와 배경을 소개하였다. DR은 물리, 센서, 환경 파라미터를 무작위로 변화시켜 다양한 상황에 강건한 정책을 학습하며 실제 환경을 randomized 환경으로 간주함으로써 zero-shot transfer를 달성할 수 있다. 하지만 학습 난이도와 연산 비용 증가, 분포 설계의 경험 의존성 등의 태생적 단점을 가지며, 이를 개선하기 위해 파라미터 분포를 조정하는 Guided Domain Randomization(GDR)에 대해 살펴보았다. 구체적으로는 실제 성능 피드백 기반 최적화(bi-level optimization, RL/BO), 메타학습 기반 적응, 실제 데이터 정합(SimOpt, RCAN), 시뮬레이터 데이터 기반 가이드(DeceptionNet, ADR) 등 다양한 변형 기법들을 소개하였다.",
+      "keywords": [
+        "Sim2Real",
+        "Optimization"
+      ]
     },
     {
       "date": "2025.08.01",
       "title": "용접선 프로젝트: 선검출",
       "speaker": "김정호",
-      "summary": "비정형 용접 환경에서의 한계를 극복하기 위해 YOLO 기반 ROI 추출과 영상 보정을 거쳐 안정적인 입력을 확보하고, 여러 선 검출 알고리즘과 가중치 기반 RANSAC을 활용해 용접선의 방향을 추정하였다. 이어서 ROI 중심·기울기 조건 및 부재 형상별 규칙을 적용해 Outlier를 제거하고 끝점을 결정함으로써, 다양한 부재 조합 및 환경에 유연하게 대응할 수 있는 용접선 검출 기법을 제안한다."
+      "summary": "비정형 용접 환경에서의 한계를 극복하기 위해 YOLO 기반 ROI 추출과 영상 보정을 거쳐 안정적인 입력을 확보하고, 여러 선 검출 알고리즘과 가중치 기반 RANSAC을 활용해 용접선의 방향을 추정하였다. 이어서 ROI 중심·기울기 조건 및 부재 형상별 규칙을 적용해 Outlier를 제거하고 끝점을 결정함으로써, 다양한 부재 조합 및 환경에 유연하게 대응할 수 있는 용접선 검출 기법을 제안한다.",
+      "keywords": [
+        "Computer Vision"
+      ]
     },
     {
       "date": "2025.07.25",
       "title": "CDA 시스템 메타휴리스틱 기반 최적조합 도출 기법 소개",
       "speaker": "최호진",
-      "summary": "메타휴리스틱 기반 CDA 시스템 소모전력 최소화 과제를 간략히 소개하고, 압축기 모델링 및 AI 기반 최소화를 위한 후속 연구를 방향을 소개하였다. 메타휴리스틱 기반 최적조합 도출 기법은 목표 유량을 만족시키기 위해 각 압축기의 유량 조합을 SA를 기반 탐색한다. 온도를 기반으로 초기에는 광범위하게 조합을 탐색하다가 온도가 점차 감소함에 따라 탐색 범위를 줄여 준최적 조합을 탐색해나간다. 나아가 branch 기법을 활용하여 탐색 속도 및 성능을 높였으며, 결과를 공유하고 이에 대한 논의를 진행하였다."
+      "summary": "메타휴리스틱 기반 CDA 시스템 소모전력 최소화 과제를 간략히 소개하고, 압축기 모델링 및 AI 기반 최소화를 위한 후속 연구를 방향을 소개하였다. 메타휴리스틱 기반 최적조합 도출 기법은 목표 유량을 만족시키기 위해 각 압축기의 유량 조합을 SA를 기반 탐색한다. 온도를 기반으로 초기에는 광범위하게 조합을 탐색하다가 온도가 점차 감소함에 따라 탐색 범위를 줄여 준최적 조합을 탐색해나간다. 나아가 branch 기법을 활용하여 탐색 속도 및 성능을 높였으며, 결과를 공유하고 이에 대한 논의를 진행하였다.",
+      "keywords": [
+        "Optimization"
+      ]
     },
     {
       "date": "2025.07.18",
       "title": "Neural Netwok기반 MRAC, DSM(Deep Surrogate Model) 연구 소개",
       "speaker": "이지혜",
-      "summary": "Neural-Network 기반 MRAC 과제의 배경과 성과를 간략히 소개하고, 후속 연구인 DSM(Deep Surrogate Model)의 진행 현황을 발표하였다. DSM은 복잡한 물리 시뮬레이터의 동적 특성을 신경망으로 모사하여 시뮬레이션 시간을 대폭 단축하고, 개발 효율을 향상시키는 기법이다. DSM 추론 시, auto-regressive 방식을 사용할 경우 이전 단계에서 발생한 출력 오차가 다음 단계의 입력으로 재사용되면서, 오차가 증폭되는 exposure bias 현상이 발생한다. 본 세미나에서는 이를 개선하기 위해 Scheduled Sampling, Multi-step loss 등의 기법을 적용하는 다양한 방안에 대해 논의하였다."
+      "summary": "Neural-Network 기반 MRAC 과제의 배경과 성과를 간략히 소개하고, 후속 연구인 DSM(Deep Surrogate Model)의 진행 현황을 발표하였다. DSM은 복잡한 물리 시뮬레이터의 동적 특성을 신경망으로 모사하여 시뮬레이션 시간을 대폭 단축하고, 개발 효율을 향상시키는 기법이다. DSM 추론 시, auto-regressive 방식을 사용할 경우 이전 단계에서 발생한 출력 오차가 다음 단계의 입력으로 재사용되면서, 오차가 증폭되는 exposure bias 현상이 발생한다. 본 세미나에서는 이를 개선하기 위해 Scheduled Sampling, Multi-step loss 등의 기법을 적용하는 다양한 방안에 대해 논의하였다.",
+      "keywords": [
+        "Surrogate Modeling",
+        "Control"
+      ]
     },
     {
       "date": "2025.07.14",
       "title": "Bayesian Optimization",
       "speaker": "김원석",
-      "summary": "블랙박스 함수 최적화를 수행하는 Bayesian Optimization(BO) 기법을 KCC 튜토리얼 자료를 토대로 간략히 소개하였다. BO는 블랙박스 함수를 근사하는 대체모델과, 그 모델의 예측값/불확실성을 토대로 다음 탐색 위치를 결정하는 획득함수로 구성된다. 대체모델은 주로 다변량 정규분포를 나타내는 Gaussian Process의 공분산 함수를 두 입력값 사이의 유사도를 나타내는 커널로 사용한다. (입력 간 거리가 멀수록 불확실성이 커지는 것을 표현) 또한, High-dimensional BO 문제를 해결하기 위한 가산모델(차원출력 합산), 부분공간(차원선형축소), 잠재공간(비선형임베딩) 활용 기법을 소개하였다."
+      "summary": "블랙박스 함수 최적화를 수행하는 Bayesian Optimization(BO) 기법을 KCC 튜토리얼 자료를 토대로 간략히 소개하였다. BO는 블랙박스 함수를 근사하는 대체모델과, 그 모델의 예측값/불확실성을 토대로 다음 탐색 위치를 결정하는 획득함수로 구성된다. 대체모델은 주로 다변량 정규분포를 나타내는 Gaussian Process의 공분산 함수를 두 입력값 사이의 유사도를 나타내는 커널로 사용한다. (입력 간 거리가 멀수록 불확실성이 커지는 것을 표현) 또한, High-dimensional BO 문제를 해결하기 위한 가산모델(차원출력 합산), 부분공간(차원선형축소), 잠재공간(비선형임베딩) 활용 기법을 소개하였다.",
+      "keywords": [
+        "Optimization"
+      ]
     },
     {
       "date": "2025.06.09",
       "title": "Dreamer Supplement",
       "speaker": "이창민",
-      "summary": "이 세미나에서는 World Model에서 가장 중요하다고 할 수 있는 Transition Model의 구조인 RSSM에 대해서 살펴본다. 해당 구조는 Deterministic Latent State와 Stochastic Latent State 모두가 시계열 정보를 가지면서 전이되는 형태로, 이전 상태를 정확하게 반영하면서도 불확실성을 반영할 수 있다. 또한 해당 RSSM이 신경망 수준에서 정확하게 어떻게 구성되는 지 확인하고, RSSM의 일부분을 공유하는 Representation Model을 추가하여 Dreamer에서 Dynamics의 학습이 어떻게 진행되는 지 자세하게 알아보았다."
+      "summary": "이 세미나에서는 World Model에서 가장 중요하다고 할 수 있는 Transition Model의 구조인 RSSM에 대해서 살펴본다. 해당 구조는 Deterministic Latent State와 Stochastic Latent State 모두가 시계열 정보를 가지면서 전이되는 형태로, 이전 상태를 정확하게 반영하면서도 불확실성을 반영할 수 있다. 또한 해당 RSSM이 신경망 수준에서 정확하게 어떻게 구성되는 지 확인하고, RSSM의 일부분을 공유하는 Representation Model을 추가하여 Dreamer에서 Dynamics의 학습이 어떻게 진행되는 지 자세하게 알아보았다.",
+      "keywords": [
+        "World Models",
+        "Reinforcement Learning"
+      ]
     },
     {
       "date": "2025.05.26",
       "title": "Dreamer v1, v2, v3: Model-Based Reinforcement Learning with world models",
       "speaker": "김민재",
-      "summary": "World Models는 기존 Model-Based Reinforcement Learning의 걸림돌인 Compounding Error를 극복하고자 Recurrent State Space Model(RSSM)구조를 제시하였다. Dreamer Algorithms는 World Models를 사용하여 DMC, Atari를 비롯해 약 150개의 tasks에 적용하는데 성공한 알고리즘이다.Dreamer Algorithm에 대한 논문은 총 세 편으로, 본 세미나에서는 기본이 되는 Dreamer v1 알고리즘을 소개하고, v2 및 v3 알고리즘에서 추가된 기법을 설명한다. 또한 각각의 기법이 어떤 원리로 적용되고, 성능을 향상시켰는지에 대해 발표한다."
+      "summary": "World Models는 기존 Model-Based Reinforcement Learning의 걸림돌인 Compounding Error를 극복하고자 Recurrent State Space Model(RSSM)구조를 제시하였다. Dreamer Algorithms는 World Models를 사용하여 DMC, Atari를 비롯해 약 150개의 tasks에 적용하는데 성공한 알고리즘이다.Dreamer Algorithm에 대한 논문은 총 세 편으로, 본 세미나에서는 기본이 되는 Dreamer v1 알고리즘을 소개하고, v2 및 v3 알고리즘에서 추가된 기법을 설명한다. 또한 각각의 기법이 어떤 원리로 적용되고, 성능을 향상시켰는지에 대해 발표한다.",
+      "keywords": [
+        "World Models",
+        "Reinforcement Learning"
+      ]
     },
     {
       "date": "2025.05.12",
       "title": "Surrogate Model without Simulation Data",
       "speaker": "최호진",
-      "summary": "본 세미나는 simulation data 없이 surrogate model을 학습하는 방법에 대해서 소개한다. 실제 유체역학에서 사용되는 CFD simulator의 데이터를 사용하지 않고 물리수식을 기반으로 loss function을 설계하고 surrogate model에 학습단계부터 다양한 조건을 함께 고려하여 출력을 생성하도록 설계한다. 실제 CFD 결과와 surrogate model의 성능 결과를 비교하고 수식만으로도 surrogate model 학습이 가능한 것을 실험결과를 통해 보여준다."
+      "summary": "본 세미나는 simulation data 없이 surrogate model을 학습하는 방법에 대해서 소개한다. 실제 유체역학에서 사용되는 CFD simulator의 데이터를 사용하지 않고 물리수식을 기반으로 loss function을 설계하고 surrogate model에 학습단계부터 다양한 조건을 함께 고려하여 출력을 생성하도록 설계한다. 실제 CFD 결과와 surrogate model의 성능 결과를 비교하고 수식만으로도 surrogate model 학습이 가능한 것을 실험결과를 통해 보여준다.",
+      "keywords": [
+        "Surrogate Modeling"
+      ]
     },
     {
       "date": "2025.04.28",
       "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances(saycan)",
       "speaker": "고은성",
-      "summary": "SayCan은 대형 언어 모델(LLM)의 일반적 지식과 로봇의 실제 행동 가능성(Affordance)을 결합하여 로봇의 작업 수행 능력을 획기적으로 개선한 모델이다. LLM(Say)은 사용자의 명령을 이해하고 어떤 행동이 적합한지 확률적으로 판단하며, 가치함수(Value Function)를 사용하는 행동가능성 모델(Can)은 로봇이 현재 상태에서 특정 행동을 성공적으로 수행할 확률을 평가하여 현실 환경의 제약을 반영한다. SayCan은 이 두 가지 확률을 결합하여 로봇이 실제 환경에서 가장 적합하고 성공 가능성이 높은 행동을 선택하도록 함으로써, 로봇이 수행 가능한 현실적인 행동을 효과적으로 계획하고 수행할 수 있도록 개선했다."
+      "summary": "SayCan은 대형 언어 모델(LLM)의 일반적 지식과 로봇의 실제 행동 가능성(Affordance)을 결합하여 로봇의 작업 수행 능력을 획기적으로 개선한 모델이다. LLM(Say)은 사용자의 명령을 이해하고 어떤 행동이 적합한지 확률적으로 판단하며, 가치함수(Value Function)를 사용하는 행동가능성 모델(Can)은 로봇이 현재 상태에서 특정 행동을 성공적으로 수행할 확률을 평가하여 현실 환경의 제약을 반영한다. SayCan은 이 두 가지 확률을 결합하여 로봇이 실제 환경에서 가장 적합하고 성공 가능성이 높은 행동을 선택하도록 함으로써, 로봇이 수행 가능한 현실적인 행동을 효과적으로 계획하고 수행할 수 있도록 개선했다.",
+      "keywords": [
+        "Robotics",
+        "Foundation Models"
+      ]
     },
     {
       "date": "2025.04.21",
       "title": "LLAMBO: large language models to enhance Bayesian optimization",
       "speaker": "김정호",
-      "summary": "고차원 블랙박스 함수를 최적화 하는데 쓰이는 BO에는 사실 약점이 많다. 기존의 그리드 서치와 랜덤 서치 대비 신속한 최적화와 더 적은 데이터의 필요를 표방하지만, 관측 데이터가 부족하면 탐색 효율이 저하되고, 초기 데이터가 없다면 무작위 초기화에 의존하게 되며 그에 따라 발생하는 초반 단계의 시행 착오가 surrogate model의 편향을 발생 시킬 수 있다. LLAMBO는 이러한 문제를 LLM과 프롬프트 엔지니어링만을 활용해 해결하였다."
+      "summary": "고차원 블랙박스 함수를 최적화 하는데 쓰이는 BO에는 사실 약점이 많다. 기존의 그리드 서치와 랜덤 서치 대비 신속한 최적화와 더 적은 데이터의 필요를 표방하지만, 관측 데이터가 부족하면 탐색 효율이 저하되고, 초기 데이터가 없다면 무작위 초기화에 의존하게 되며 그에 따라 발생하는 초반 단계의 시행 착오가 surrogate model의 편향을 발생 시킬 수 있다. LLAMBO는 이러한 문제를 LLM과 프롬프트 엔지니어링만을 활용해 해결하였다.",
+      "keywords": [
+        "Optimization",
+        "Surrogate Modeling",
+        "Foundation Models",
+        "Generative AI"
+      ]
     },
     {
       "date": "2025.04.14",
       "title": "Transformer-Based Surrogate Model",
       "speaker": "이지혜",
-      "summary": "데이터 센터의 온도 제어를 위해 surrogate model을 적용하여 시뮬레이션 속도를 향상시킨 연구를 소개하였다. 이 연구에서는 Transformer의 self-attention 메커니즘을 활용하여 입력 데이터의 시간적, 공간적 연관성을 효과적으로 학습할 수 있도록 surrogate model을 설계하였다. 또한, 물리적 변화 예측이라는 목표에 맞게 입출력 구조를 구성하여, 기존 모델 대비 시뮬레이션 속도와 예측 정확도 향상을 달성한 실험 결과를 제시하였다."
+      "summary": "데이터 센터의 온도 제어를 위해 surrogate model을 적용하여 시뮬레이션 속도를 향상시킨 연구를 소개하였다. 이 연구에서는 Transformer의 self-attention 메커니즘을 활용하여 입력 데이터의 시간적, 공간적 연관성을 효과적으로 학습할 수 있도록 surrogate model을 설계하였다. 또한, 물리적 변화 예측이라는 목표에 맞게 입출력 구조를 구성하여, 기존 모델 대비 시뮬레이션 속도와 예측 정확도 향상을 달성한 실험 결과를 제시하였다.",
+      "keywords": [
+        "Surrogate Modeling",
+        "Sequence Modeling"
+      ]
     },
     {
       "date": "2025.04.07",
       "title": "Robot Foundation Model 2",
       "speaker": "이창민",
-      "summary": "RT-1, PaLM-E, RT-2, pi0까지 발전한 RFM들을 살펴보았다. 로봇마다 관절의 크기나 카메라 위치도 달라지고, 같은 로봇이라도 task specific하게 훈련이 되었기 때문에 자연어 처리, 비전 분야와 다르게 로봇은 로봇 specific한 한계로 Foundation Model이 등장하지 못하고 있었다. 이를 해결하기 위한 시도를 지난 Robot Foundation Model 1 세미나에서 소개하였고, (데이터 셋 크기 키우기, 모델 크기 키우기, 속도 향상을 위한 아키텍처 고안) 이번 세미나에서는 어떻게 “추가적인 성능 향상”을 이루었는지 살펴보았다. RT-2는 자연어 및 이미지 입력을 low-level의 로봇 액션으로 출력함으로써 일반화 성능을 향상시킬 수 있었다. pi0는 Mixture of Experts(VLM과 Action Expert), Flow Matching(Diffusion 기반의 생성형 모델) 등 최신 방법론들을 Robot Learning에 맞도록 변형하여 일반화 성능을 더욱 끌어올렸다."
+      "summary": "RT-1, PaLM-E, RT-2, pi0까지 발전한 RFM들을 살펴보았다. 로봇마다 관절의 크기나 카메라 위치도 달라지고, 같은 로봇이라도 task specific하게 훈련이 되었기 때문에 자연어 처리, 비전 분야와 다르게 로봇은 로봇 specific한 한계로 Foundation Model이 등장하지 못하고 있었다. 이를 해결하기 위한 시도를 지난 Robot Foundation Model 1 세미나에서 소개하였고, (데이터 셋 크기 키우기, 모델 크기 키우기, 속도 향상을 위한 아키텍처 고안) 이번 세미나에서는 어떻게 “추가적인 성능 향상”을 이루었는지 살펴보았다. RT-2는 자연어 및 이미지 입력을 low-level의 로봇 액션으로 출력함으로써 일반화 성능을 향상시킬 수 있었다. pi0는 Mixture of Experts(VLM과 Action Expert), Flow Matching(Diffusion 기반의 생성형 모델) 등 최신 방법론들을 Robot Learning에 맞도록 변형하여 일반화 성능을 더욱 끌어올렸다.",
+      "keywords": [
+        "Robotics",
+        "Foundation Models",
+        "Physical AI"
+      ]
     },
     {
       "date": "2025.03.31",
       "title": "Reinforcement Learning with Intrinsic Reward: ICM, RND using Unity",
       "speaker": "김민재",
-      "summary": "Intrinsic Reward는 Sparse Reward 환경에 대하여 Exploration을 강화하는 방법이다. 본 세미나에서 Intrinsic Reward의 방법과 예시에 대해 소개하고, 이를 응용해 만들어진 두 가지 Intrinsic Reward 알고리즘 ICM, RND을 논문을 바탕으로 소개하였다. 또한, Unity에서 간단한 Sparse Reward 환경인 미로찾기를 구현하고, ICM, RND를 구현하여 해당 환경에서 결과를 비교했다."
+      "summary": "Intrinsic Reward는 Sparse Reward 환경에 대하여 Exploration을 강화하는 방법이다. 본 세미나에서 Intrinsic Reward의 방법과 예시에 대해 소개하고, 이를 응용해 만들어진 두 가지 Intrinsic Reward 알고리즘 ICM, RND을 논문을 바탕으로 소개하였다. 또한, Unity에서 간단한 Sparse Reward 환경인 미로찾기를 구현하고, ICM, RND를 구현하여 해당 환경에서 결과를 비교했다.",
+      "keywords": [
+        "Reinforcement Learning",
+        "Extended Reality"
+      ]
     },
     {
       "date": "2025.03.24",
       "title": "Knowledge Distillation of LLMs",
       "speaker": "고은성",
-      "summary": "최근 지식 증류가 활발히 활용되고 있는 LLM 분야에서, 지식 증류가 어떻게 적용되는 지를 이해하고, 특히 MiniLLM 논문을 통해 최신 LLM 지식 증류 기법에 대해 살펴보았다. MiniMML은 기존 지식 증류에서 흔히 사용되던 KL-Divergence를 역방향으로 적용함으로써, LLM에 보다 적합한 목적함수를 제안한 기법이다."
+      "summary": "최근 지식 증류가 활발히 활용되고 있는 LLM 분야에서, 지식 증류가 어떻게 적용되는 지를 이해하고, 특히 MiniLLM 논문을 통해 최신 LLM 지식 증류 기법에 대해 살펴보았다. MiniMML은 기존 지식 증류에서 흔히 사용되던 KL-Divergence를 역방향으로 적용함으로써, LLM에 보다 적합한 목적함수를 제안한 기법이다.",
+      "keywords": [
+        "Foundation Models",
+        "Generative AI"
+      ]
     },
     {
       "date": "2025.03.17",
       "title": "Meta-Heuristic",
       "speaker": "최호진",
-      "summary": "Meta-heuristic Algorithm이란 Heuristic Algorithm과 같이 good solution을 구하는 Algorithm이지만 특정 문제에 종속되지 않고 다양한 문제에 적용이 가능한 Frame work가 되는 Algorithm이다. 본 세미나는 Meta-heuristic 서베이 논문을 기반으로, 여러 Meta-heuristic Algorithm 기법을 소개한다. Genetic Algorithm (GA), Particle Swarm Optimization (PSO), Ant Colony Optimization (ACO), Artificial Bee Colony (ABC), Simulated Annealing (SA) 총 5가지 알고리즘의 컨셉 및 동작 방식을 TSP를 적용한 예시 코드를 활용하여 소개하였으며 각 알고리즘의 차이점을 비교하였다."
+      "summary": "Meta-heuristic Algorithm이란 Heuristic Algorithm과 같이 good solution을 구하는 Algorithm이지만 특정 문제에 종속되지 않고 다양한 문제에 적용이 가능한 Frame work가 되는 Algorithm이다. 본 세미나는 Meta-heuristic 서베이 논문을 기반으로, 여러 Meta-heuristic Algorithm 기법을 소개한다. Genetic Algorithm (GA), Particle Swarm Optimization (PSO), Ant Colony Optimization (ACO), Artificial Bee Colony (ABC), Simulated Annealing (SA) 총 5가지 알고리즘의 컨셉 및 동작 방식을 TSP를 적용한 예시 코드를 활용하여 소개하였으며 각 알고리즘의 차이점을 비교하였다.",
+      "keywords": [
+        "Optimization"
+      ]
     },
     {
       "date": "2025.03.10",
       "title": "AutoML",
       "speaker": "이지혜",
-      "summary": "AutoML은 딥러닝 모델 개발의 전체적인 파이프라인을 자동화하는 개념이다. 본 세미나에서는 AutoML 관련 서베이 논문을 바탕으로, 딥러닝 모델 구축 과정인 데이터 준비(Data Preparation), 특징 엔지니어링(Feature Engineering), 모델 생성(Model Generation) 순으로 주요 연구 분야를 소개하였다. 특히, 모델 생성(Model Generation) 단계에서 대표적인 기법인 NAS(Neural Architecture Search)의 기본 개념과 주요 탐색 방법을 중점적으로 다루었다."
+      "summary": "AutoML은 딥러닝 모델 개발의 전체적인 파이프라인을 자동화하는 개념이다. 본 세미나에서는 AutoML 관련 서베이 논문을 바탕으로, 딥러닝 모델 구축 과정인 데이터 준비(Data Preparation), 특징 엔지니어링(Feature Engineering), 모델 생성(Model Generation) 순으로 주요 연구 분야를 소개하였다. 특히, 모델 생성(Model Generation) 단계에서 대표적인 기법인 NAS(Neural Architecture Search)의 기본 개념과 주요 탐색 방법을 중점적으로 다루었다.",
+      "keywords": [
+        "Optimization"
+      ]
     },
     {
       "date": "2025.03.10",
       "title": "Robot Foundation Model",
       "speaker": "이창민",
-      "summary": "LLM이나 Vision 분야는 나름대로 Foundation Model이라 불리는 모델들이 존재한다. GPT나, SAM이 그에 해당한다. 하지만 로봇의 Task Specific한 특성상 여러 로봇은 물론이고, 여러 Task에조차 범용적 적용이 가능한 모델이 존재하기 어렵다. 이러한 한계를 조금이나마 극복하기 위해 처음 등장한 모델이 RT-1이다. RT-1은 모델의 크기를 키우면서 추론 속도가 저하되지 않도록 새로운 모델 구조를 제시했다. 먼저 이미지를 효율적으로 토큰으로 변경하는 EfficientNet을 사용하였고, Instruction의 정보 또한 FiLM을 통해 통합하였다. 그리고 최종적으로 생성된 토큰을 Transformer의 Decoder에 입력으로 전달하고, 256개로 이산화된 액션을 출력한다. 이 과정도 입력의 차원에 따라 작업 시간이 제곱으로 증가하는 작업인데, TokenLearner 구조를 적용하여 추론 시간을 줄였다."
+      "summary": "LLM이나 Vision 분야는 나름대로 Foundation Model이라 불리는 모델들이 존재한다. GPT나, SAM이 그에 해당한다. 하지만 로봇의 Task Specific한 특성상 여러 로봇은 물론이고, 여러 Task에조차 범용적 적용이 가능한 모델이 존재하기 어렵다. 이러한 한계를 조금이나마 극복하기 위해 처음 등장한 모델이 RT-1이다. RT-1은 모델의 크기를 키우면서 추론 속도가 저하되지 않도록 새로운 모델 구조를 제시했다. 먼저 이미지를 효율적으로 토큰으로 변경하는 EfficientNet을 사용하였고, Instruction의 정보 또한 FiLM을 통해 통합하였다. 그리고 최종적으로 생성된 토큰을 Transformer의 Decoder에 입력으로 전달하고, 256개로 이산화된 액션을 출력한다. 이 과정도 입력의 차원에 따라 작업 시간이 제곱으로 증가하는 작업인데, TokenLearner 구조를 적용하여 추론 시간을 줄였다.",
+      "keywords": [
+        "Robotics",
+        "Foundation Models",
+        "Physical AI"
+      ]
     },
     {
       "date": "2025.02.24",
       "title": "GAN",
       "speaker": "김정호",
-      "summary": "GAN은 기존 생성 모델들이 확률 분포를 직접 추정하는 MLE 기반 방식의 학습 난이도와 최적화 문제를 해결하기 위해 제안된 기법이다. 적대적 학습을 통해 생성자(G)와 판별자(D)가 경쟁하며 점점 더 현실적인 데이터를 생성하도록 유도하지만, 모드 붕괴, 학습 불안정성, 평가 기준 부족 등의 한계를 가진다. 본 세미나에서는 이러한 GAN을 이해하기 위해 필요한 배경지식과, 어떻게 GAN으로 실제 데이터의 확률 분포를 추종하는 것이 가능한가에 대해 다룬다."
+      "summary": "GAN은 기존 생성 모델들이 확률 분포를 직접 추정하는 MLE 기반 방식의 학습 난이도와 최적화 문제를 해결하기 위해 제안된 기법이다. 적대적 학습을 통해 생성자(G)와 판별자(D)가 경쟁하며 점점 더 현실적인 데이터를 생성하도록 유도하지만, 모드 붕괴, 학습 불안정성, 평가 기준 부족 등의 한계를 가진다. 본 세미나에서는 이러한 GAN을 이해하기 위해 필요한 배경지식과, 어떻게 GAN으로 실제 데이터의 확률 분포를 추종하는 것이 가능한가에 대해 다룬다.",
+      "keywords": [
+        "Generative AI"
+      ]
     },
     {
       "date": "2025.02.24",
       "title": "Knowledge Distillation",
       "speaker": "고은성",
-      "summary": "Knowledge Distillation이란 모델의 규모가 큰 모델(Teacher model)의 지식을 작은 모델(Student model)에게 전달하여 성능을 유지하면서도 경량화된 모델을 만드는 대표적인 모델 경량화 방법 중 하나이다. 도메인과 데이터에 따라 다양한 KD 방법이 연구되고 있으며, 이번 세미나에서는 기본적인 Vanilla KD를 비롯해, Teacher model에서 활용되는 Knowledge의 개념과 연구 동향을 소개하였다."
+      "summary": "Knowledge Distillation이란 모델의 규모가 큰 모델(Teacher model)의 지식을 작은 모델(Student model)에게 전달하여 성능을 유지하면서도 경량화된 모델을 만드는 대표적인 모델 경량화 방법 중 하나이다. 도메인과 데이터에 따라 다양한 KD 방법이 연구되고 있으며, 이번 세미나에서는 기본적인 Vanilla KD를 비롯해, Teacher model에서 활용되는 Knowledge의 개념과 연구 동향을 소개하였다.",
+      "keywords": [
+        "Foundation Models"
+      ]
     },
     {
       "date": "2025.02.10",
       "title": "Surrogate Model",
       "speaker": "이지혜",
-      "summary": "Surrogate model(대체모델)이란 복잡한 시스템의 입출력 특성을 근사해 계산량을 크게 줄이면서 유사한 결과를 내는 모델이다. 예를 들어, 며칠이 소요되는 자동차/항공기 설계 시뮬레이션이나 최적화 과정을 대체모델로 단축할 수 있으며, 최근에는 신경망 기반 구현이 주목받고 있다. 활용 사례로, 인접 데이터가 유사할 때 대체 모델을 CNN으로 구현하는 방법, 물리 시뮬레이션 대체모델의 loss function에 물리 법칙을 반영하는 방법, 그리고 LSTM-AE로 대체모델의 입출력 차원을 축소하는 방법 등을 소개하였다."
+      "summary": "Surrogate model(대체모델)이란 복잡한 시스템의 입출력 특성을 근사해 계산량을 크게 줄이면서 유사한 결과를 내는 모델이다. 예를 들어, 며칠이 소요되는 자동차/항공기 설계 시뮬레이션이나 최적화 과정을 대체모델로 단축할 수 있으며, 최근에는 신경망 기반 구현이 주목받고 있다. 활용 사례로, 인접 데이터가 유사할 때 대체 모델을 CNN으로 구현하는 방법, 물리 시뮬레이션 대체모델의 loss function에 물리 법칙을 반영하는 방법, 그리고 LSTM-AE로 대체모델의 입출력 차원을 축소하는 방법 등을 소개하였다.",
+      "keywords": [
+        "Surrogate Modeling"
+      ]
     },
     {
       "date": "2025.02.10",
       "title": "Let’s dive into World Model with Genie",
       "speaker": "이창민",
-      "summary": "현재의 World model은 video generation model의 일종으로 볼 수 있으며, 긴 영상 생성, 3D 모델링이 필요하지 않은 cost-effective simulation, 사용자 상호작용 등의 특징을 가진다. 세미나에서는 World model 중 하나인 Genie의 세 컴포넌트를 살펴봤으며, (1)Video Tokenizer는 video frames을 discrete tokens로 변환하고, (2)Latent Action Model는 training phase에만 사용되며 frames 사이의 action(8개의 이산적 액션)을 추론하고, (3)Dynamics Model은 video tokens(from VT)와 action(from LAM)을 받아 다음 video tokens을 생성한다."
+      "summary": "현재의 World model은 video generation model의 일종으로 볼 수 있으며, 긴 영상 생성, 3D 모델링이 필요하지 않은 cost-effective simulation, 사용자 상호작용 등의 특징을 가진다. 세미나에서는 World model 중 하나인 Genie의 세 컴포넌트를 살펴봤으며, (1)Video Tokenizer는 video frames을 discrete tokens로 변환하고, (2)Latent Action Model는 training phase에만 사용되며 frames 사이의 action(8개의 이산적 액션)을 추론하고, (3)Dynamics Model은 video tokens(from VT)와 action(from LAM)을 받아 다음 video tokens을 생성한다.",
+      "keywords": [
+        "World Models"
+      ]
     },
     {
       "date": "2025.01.27",
       "title": "ImageBind: One Embedding Space To Bind Them All",
       "speaker": "김정호",
-      "summary": "CLIP, BLIP에 이어 ImageBind가 발견한 현상을 소개하였다. CLIP은 텍스트와 이미지를 공통 임베딩 공간에 정렬하여 대조 학습 (이미지-텍스트 쌍을 크롤링하여, 각 쌍별 인코딩 결과 벡터 유사도가 높게 나오고 다른 쌍의 유사도는 낮게 나오도록 학습) 수행하고, BLIP은 크롤링 오류를 CapFilt(사전 학습된 모델로 이미지-텍스트 쌍 오류 검출 후 정확한 캡션 생성하여 학습) 등으로 해결하는 등 Vision-Language Model의 접근법을 제시하였다. ImageBind는 여기에 이어 이미지를 중심으로 텍스트, 오디오, IMU, Depth 등을 CLIP 방식으로 대조 학습했더니 직접 학습하지 않은 연관된 쌍 (오디오-텍스트)의 유사도가 높게 나오는 것을 발견하였다."
+      "summary": "CLIP, BLIP에 이어 ImageBind가 발견한 현상을 소개하였다. CLIP은 텍스트와 이미지를 공통 임베딩 공간에 정렬하여 대조 학습 (이미지-텍스트 쌍을 크롤링하여, 각 쌍별 인코딩 결과 벡터 유사도가 높게 나오고 다른 쌍의 유사도는 낮게 나오도록 학습) 수행하고, BLIP은 크롤링 오류를 CapFilt(사전 학습된 모델로 이미지-텍스트 쌍 오류 검출 후 정확한 캡션 생성하여 학습) 등으로 해결하는 등 Vision-Language Model의 접근법을 제시하였다. ImageBind는 여기에 이어 이미지를 중심으로 텍스트, 오디오, IMU, Depth 등을 CLIP 방식으로 대조 학습했더니 직접 학습하지 않은 연관된 쌍 (오디오-텍스트)의 유사도가 높게 나오는 것을 발견하였다.",
+      "keywords": [
+        "Computer Vision",
+        "Foundation Models",
+        "Multimodal AI"
+      ]
     },
     {
       "date": "2025.01.20",
       "title": "Actor-Critic Deep Reinforcement Learning for Solving Job Shop Scheduling Problems",
       "speaker": "최호진",
-      "summary": "CNN 기반 Actor-Critic 모델을 활용한 Job-Shop Scheduling Problem 해결 방법 소개"
+      "summary": "CNN 기반 Actor-Critic 모델을 활용한 Job-Shop Scheduling Problem 해결 방법 소개",
+      "keywords": [
+        "Reinforcement Learning",
+        "Optimization",
+        "Scheduling"
+      ]
     },
     {
       "date": "2025.01.20",
       "title": "Segment Anything(SAM)",
       "speaker": "고은성",
-      "summary": "zero-shot generalizaion을 통한 segmentation 계의 foundation model을 만들려는 meta의 SAM(Segment Anything Model), 실시간 비디오 분할까지 가능하게 한 SAM2 그리고 그의 활용에 대한 소개"
+      "summary": "zero-shot generalizaion을 통한 segmentation 계의 foundation model을 만들려는 meta의 SAM(Segment Anything Model), 실시간 비디오 분할까지 가능하게 한 SAM2 그리고 그의 활용에 대한 소개",
+      "keywords": [
+        "Computer Vision",
+        "Foundation Models"
+      ]
     },
     {
       "date": "2025.01.13",
       "title": "Mutual Information State Intrinsic Control",
       "speaker": "이창민",
-      "summary": "Mutual Information 기반 보상으로 Agent와 Surrounding의 상호작용을 학습하여 RL 성능을 향상시키는 MUSIC 논문 리뷰"
+      "summary": "Mutual Information 기반 보상으로 Agent와 Surrounding의 상호작용을 학습하여 RL 성능을 향상시키는 MUSIC 논문 리뷰",
+      "keywords": [
+        "Reinforcement Learning"
+      ]
     },
     {
       "date": "2025.01.06",
       "title": "Policy-Based Reinforcement Learning: A Comparative Analysis of Six Algorithms",
       "speaker": "이지혜",
-      "summary": "여섯 가지 정책 기반 강화학습 알고리즘의 성능과 특징 소개 및 비교 분석"
+      "summary": "여섯 가지 정책 기반 강화학습 알고리즘의 성능과 특징 소개 및 비교 분석",
+      "keywords": [
+        "Reinforcement Learning"
+      ]
     },
     {
       "date": "2024.12.24",
       "title": "Job-Shop Scheduling Problem and DRL",
       "speaker": "최호진",
-      "summary": "강화학습을 활용한 Job-Shop Scheduling Problem 해결 방법 소개"
+      "summary": "강화학습을 활용한 Job-Shop Scheduling Problem 해결 방법 소개",
+      "keywords": [
+        "Reinforcement Learning",
+        "Optimization",
+        "Scheduling"
+      ]
     },
     {
       "date": "2024.12.24",
       "title": "Vision Transformer",
       "speaker": "김정호",
-      "summary": "Transformer 모델의 구조와 ViT를 통한 이미지 인식 기술의 확장성을 소개하며, Attention 메커니즘에 대해 설명"
+      "summary": "Transformer 모델의 구조와 ViT를 통한 이미지 인식 기술의 확장성을 소개하며, Attention 메커니즘에 대해 설명",
+      "keywords": [
+        "Computer Vision",
+        "Foundation Models",
+        "Deep Learning"
+      ]
     },
     {
       "date": "2024.12.13",
       "title": "LayoutLM: Pre-training of Text and Layout for Document Image Understanding",
       "speaker": "고은성",
-      "summary": "DocVQA 해결을 위해 시각적 정보와 레이아웃까지 이해하는 멀티모달 모델을 제안한 LayoutLM 논문 리뷰"
+      "summary": "DocVQA 해결을 위해 시각적 정보와 레이아웃까지 이해하는 멀티모달 모델을 제안한 LayoutLM 논문 리뷰",
+      "keywords": [
+        "Computer Vision",
+        "Foundation Models",
+        "Multimodal AI",
+        "Deep Learning"
+      ]
     },
     {
       "date": "2024.12.06",
       "title": "Panoptic Segmentation",
       "speaker": "최호진",
-      "summary": "Semantic & Instance Segmentation 설명 및 Panoptic Segmentation 소개 및 평가 방법 설명"
+      "summary": "Semantic & Instance Segmentation 설명 및 Panoptic Segmentation 소개 및 평가 방법 설명",
+      "keywords": [
+        "Computer Vision",
+        "Deep Learning"
+      ]
     },
     {
       "date": "2024.11.22",
       "title": "Gen2Sim: Scaling up Robot Learning in Simulation with Generative Models",
       "speaker": "김정호",
-      "summary": "생성 모델과 LLM을 활용해 로봇 학습의 전 과정을 자동화하며, 시뮬레이터와 실제 환경 간의 간극을 줄이기 위한 프레임워크인 Gen2Sim을 소개"
+      "summary": "생성 모델과 LLM을 활용해 로봇 학습의 전 과정을 자동화하며, 시뮬레이터와 실제 환경 간의 간극을 줄이기 위한 프레임워크인 Gen2Sim을 소개",
+      "keywords": [
+        "Sim2Real",
+        "Synthetic Data",
+        "Robotics",
+        "Generative AI"
+      ]
     },
     {
       "date": "2024.11.22",
       "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
       "speaker": "이창민",
-      "summary": "LLM의 추론 능력 향상을 위한 Tree of Thoughts 기법 소개"
+      "summary": "LLM의 추론 능력 향상을 위한 Tree of Thoughts 기법 소개",
+      "keywords": [
+        "Foundation Models",
+        "Generative AI"
+      ]
     },
     {
       "date": "2024.11.08",
       "title": "InfographicVQA & 시각장애인 보행보조 시스템",
       "speaker": "고은성",
-      "summary": "어려운 실제 문제들을 인공지능과 알고리즘을 통해 해결하고자 했던 발표자의 프로젝트들 소개"
+      "summary": "어려운 실제 문제들을 인공지능과 알고리즘을 통해 해결하고자 했던 발표자의 프로젝트들 소개",
+      "keywords": [
+        "Computer Vision",
+        "Multimodal AI"
+      ]
     },
     {
       "date": "2024.10.25",
       "title": "DeepLSD",
       "speaker": "김정호",
-      "summary": "전통적인 선분 검출 기법과 딥러닝 기반 기법을 통합한 하이브리드 방식으로, 정밀성과 강인성을 확보한 선분 검출 및 보정 알고리즘인 DeepLSD를 소개"
+      "summary": "전통적인 선분 검출 기법과 딥러닝 기반 기법을 통합한 하이브리드 방식으로, 정밀성과 강인성을 확보한 선분 검출 및 보정 알고리즘인 DeepLSD를 소개",
+      "keywords": [
+        "Computer Vision",
+        "Deep Learning"
+      ]
     },
     {
       "date": "2024.10.22",
       "title": "Adressing Function Approximation Error in Actor-Critic Methods: TD3",
       "speaker": "이지혜",
-      "summary": "DDPG(Deep Deterministic Policy Gradient) 알고리즘의 구조 및 한계점을 설명하며, 이를 개선한 TD3(Twin Delayed Deep Deterministic Policy Gradient) 알고리즘의 동작 원리에 대해 설명"
+      "summary": "DDPG(Deep Deterministic Policy Gradient) 알고리즘의 구조 및 한계점을 설명하며, 이를 개선한 TD3(Twin Delayed Deep Deterministic Policy Gradient) 알고리즘의 동작 원리에 대해 설명",
+      "keywords": [
+        "Reinforcement Learning"
+      ]
     },
     {
       "date": "2024.10.15",
       "title": "AirLine",
       "speaker": "김정호",
-      "summary": "엣지 기반의 선분 검출 및 Conditional Region-grow 알고리즘을 활용해 높은 효율성과 일반화 능력을 갖춘 실시간 선분 검출 기법 소개"
+      "summary": "엣지 기반의 선분 검출 및 Conditional Region-grow 알고리즘을 활용해 높은 효율성과 일반화 능력을 갖춘 실시간 선분 검출 기법 소개",
+      "keywords": [
+        "Optimization"
+      ]
     },
     {
       "date": "2024.10.04",
       "title": "Genealogy of Reinforcement Learning",
       "speaker": "이창민",
-      "summary": "강화학습 모델의 진화 과정과 각 모델에 도입된 주요 방법론 분석"
+      "summary": "강화학습 모델의 진화 과정과 각 모델에 도입된 주요 방법론 분석",
+      "keywords": [
+        "Reinforcement Learning"
+      ]
     },
     {
       "date": "2024.09.27",
       "title": "Large Language Models Empowered Autonomous Edge AI for Connected Intelligence",
       "speaker": "최호진",
-      "summary": "LLM을 활용한 엣지 AI 자동화 프레임워크 소개"
+      "summary": "LLM을 활용한 엣지 AI 자동화 프레임워크 소개",
+      "keywords": [
+        "Robotics",
+        "Foundation Models",
+        "Generative AI"
+      ]
     },
     {
       "date": "2024.09.20",
       "title": "DDPG",
       "speaker": "이지혜",
-      "summary": "DDPG(Deep Deterministic Policy Gradient) 알고리즘의 구조와 학습 방식에 대한 소개"
+      "summary": "DDPG(Deep Deterministic Policy Gradient) 알고리즘의 구조와 학습 방식에 대한 소개",
+      "keywords": [
+        "Reinforcement Learning"
+      ]
     },
     {
       "date": "2024.08.26",
       "title": "산불 면적 산출 모델 관련 논문 리뷰",
       "speaker": "최호진",
-      "summary": "산불 면적 산출을 위한 용어 정리 및 fire frontline 산출 방법 소개"
+      "summary": "산불 면적 산출을 위한 용어 정리 및 fire frontline 산출 방법 소개",
+      "keywords": [
+        "Computer Vision"
+      ]
     },
     {
       "date": "2024.07.29",
       "title": "Resource Allocation 논문 리뷰",
       "speaker": "최호진",
-      "summary": "엣지 컴퓨팅 환경에서의 resource allocation 관련 최근 연구 동향 소개 및 보완 논문 소개"
+      "summary": "엣지 컴퓨팅 환경에서의 resource allocation 관련 최근 연구 동향 소개 및 보완 논문 소개",
+      "keywords": [
+        "Optimization",
+        "Resource Allocation"
+      ]
     },
     {
       "date": "2024.07.22",
       "title": "정책 기반 강화 학습",
       "speaker": "이지혜",
-      "summary": "연속적 행동 공간에 적용 가능한 정책 기반 강화 학습 알고리즘의 개념 및 DPG(Deterministic Policy Gradient) 알고리즘의 구조와 동작 원리에 대해 소개"
+      "summary": "연속적 행동 공간에 적용 가능한 정책 기반 강화 학습 알고리즘의 개념 및 DPG(Deterministic Policy Gradient) 알고리즘의 구조와 동작 원리에 대해 소개",
+      "keywords": [
+        "Reinforcement Learning"
+      ]
     },
     {
       "date": "2024.07.15",
       "title": "Reinforcement Learning 기초",
       "speaker": "이창민",
-      "summary": "강화 학습의 기본 개념에 대한 소개"
+      "summary": "강화 학습의 기본 개념에 대한 소개",
+      "keywords": [
+        "Reinforcement Learning"
+      ]
     },
     {
       "date": "2024.07.08",
       "title": "Resource Allocation Survey",
       "speaker": "최호진",
-      "summary": "엣지 컴퓨팅 환경에서의 resource allocation 관련 최근 연구 동향 소개"
+      "summary": "엣지 컴퓨팅 환경에서의 resource allocation 관련 최근 연구 동향 소개",
+      "keywords": [
+        "Optimization",
+        "Resource Allocation"
+      ]
     },
     {
       "date": "2024.05.20",
       "title": "ROS(Robot Operating System)2",
       "speaker": "이지혜",
-      "summary": "로봇 운영 체제인 ROS2의 개념과 통신 방법에 대해 설명하고, 간단한 실습 예시를 통한 활용 방법 소개"
+      "summary": "로봇 운영 체제인 ROS2의 개념과 통신 방법에 대해 설명하고, 간단한 실습 예시를 통한 활용 방법 소개",
+      "keywords": [
+        "Robotics"
+      ]
     },
     {
       "date": "2024.05.07",
       "title": "PI and MRAC",
       "speaker": "이지혜",
-      "summary": "예시를 활용하여 PI 제어기의 원리에 대해 설명하고, 적응형 제어기인 MRAC(Model Reference Adaptive Control)에 대해 설명"
+      "summary": "예시를 활용하여 PI 제어기의 원리에 대해 설명하고, 적응형 제어기인 MRAC(Model Reference Adaptive Control)에 대해 설명",
+      "keywords": [
+        "Control"
+      ]
     },
     {
       "date": "2024.03.11",
       "title": "강화학습 및 클라우드",
       "speaker": "이지혜",
-      "summary": "강화학습의 개념과 Q-learning, Deep Q-learning 알고리즘 및 DQN(Deep Q-Network)에 대한 설명 클라우드 네이티브 애플리케이션의 특징인 마이크로서비스, 컨테이너 가상화, DevOps 및 CI/CD에 대한 전반적인 소개"
+      "summary": "강화학습의 개념과 Q-learning, Deep Q-learning 알고리즘 및 DQN(Deep Q-Network)에 대한 설명 클라우드 네이티브 애플리케이션의 특징인 마이크로서비스, 컨테이너 가상화, DevOps 및 CI/CD에 대한 전반적인 소개",
+      "keywords": [
+        "Reinforcement Learning"
+      ]
     },
     {
       "date": "2024.02.08",
       "title": "머신러닝과 딥러닝",
       "speaker": "이지혜",
-      "summary": "머신러닝의 기본 개념에서부터 CNN(Convolutional Neural Network) 및 RNN(Recurrent Neural Network)의 원리와 응용에 대한 소개"
+      "summary": "머신러닝의 기본 개념에서부터 CNN(Convolutional Neural Network) 및 RNN(Recurrent Neural Network)의 원리와 응용에 대한 소개",
+      "keywords": [
+        "Deep Learning"
+      ]
     },
     {
       "date": "2023.12.04",
       "title": "OpenCV/CNN 기반 자율주행 페인팅 로봇",
       "speaker": "김정호",
-      "summary": "YOLOv8과 Airline 알고리즘을 활용해 도장면 기준선을 인식하는 기법과 해당 기법을 테스트 할 수 있는 시뮬레이터에 대해 소개"
+      "summary": "YOLOv8과 Airline 알고리즘을 활용해 도장면 기준선을 인식하는 기법과 해당 기법을 테스트 할 수 있는 시뮬레이터에 대해 소개",
+      "keywords": [
+        "Robotics",
+        "Computer Vision",
+        "Optimization",
+        "Deep Learning"
+      ]
     },
     {
       "date": "2023.12.04",
       "title": "객체인지 기반 자율주행",
       "speaker": "이지혜",
-      "summary": "3D Lidar를 활용하여 가상의 2D Laser Scan 데이터를 생성하고 이를 이용해 맵을 구축하며, YOLOv8을 적용한 객체 인식 성능을 갖춘 자율주행 로봇 개발 프로젝트를 진행 및 소개"
+      "summary": "3D Lidar를 활용하여 가상의 2D Laser Scan 데이터를 생성하고 이를 이용해 맵을 구축하며, YOLOv8을 적용한 객체 인식 성능을 갖춘 자율주행 로봇 개발 프로젝트를 진행 및 소개",
+      "keywords": [
+        "Robotics",
+        "Computer Vision"
+      ]
     },
     {
       "date": "2023.08.21",
       "title": "A Neural Network Based Recursive Least Square Multilateration Technique for Indoor Positioning",
       "speaker": "안현기",
-      "summary": "실내 위치 추적을 위한 신경망 기반 multilateration 기법을 활용하여 RMSE를 줄이고 계산 복잡도를 낮추는 방법론 소개"
+      "summary": "실내 위치 추적을 위한 신경망 기반 multilateration 기법을 활용하여 RMSE를 줄이고 계산 복잡도를 낮추는 방법론 소개",
+      "keywords": [
+        "Localization",
+        "Deep Learning"
+      ]
     },
     {
       "date": "2023.05.17",
       "title": "Unity - Configuration of cinemachine for cameras' complicated movement",
       "speaker": "김정호",
-      "summary": "스크립팅 없이도 다양한 카메라 워크를 구현할 수 있는 모듈로, Virtual Camera와 Brain Camera를 활용해 유연하고 효율적인 카메라 움직임 및 전환을 제공하는 툴 소개"
+      "summary": "스크립팅 없이도 다양한 카메라 워크를 구현할 수 있는 모듈로, Virtual Camera와 Brain Camera를 활용해 유연하고 효율적인 카메라 움직임 및 전환을 제공하는 툴 소개",
+      "keywords": [
+        "Extended Reality"
+      ]
     },
     {
       "date": "2023.04.24",
       "title": "Unity - Lightmap and Raycast",
       "speaker": "김정호",
-      "summary": "Unity에서 활용되는 조명 기법인 라이트맵(Baked/Realtime), 라이트 프로브, 리플렉션 프로브가 적용되는 방식 소개"
+      "summary": "Unity에서 활용되는 조명 기법인 라이트맵(Baked/Realtime), 라이트 프로브, 리플렉션 프로브가 적용되는 방식 소개",
+      "keywords": [
+        "Extended Reality"
+      ]
     },
     {
       "date": "2023.04.18",
       "title": "3D Radiometric Mapping by Means of LiDAR SLAM and Thermal Camera Data Fusion",
       "speaker": "최호진",
-      "summary": "LiDAR를 활용한 3D 공간 구축 방법 및 열화상 데이터 퓨전 기법 소개"
+      "summary": "LiDAR를 활용한 3D 공간 구축 방법 및 열화상 데이터 퓨전 기법 소개",
+      "keywords": [
+        "Computer Vision",
+        "Localization",
+        "Multimodal AI"
+      ]
     },
     {
       "date": "2023.03.27",
       "title": "비전을 활용한 용접 부재 정보 인식 및 용접선 추출",
       "speaker": "김희준",
-      "summary": "센싱 데이터와 YOLO를 활용한 용접선 추출 및 부재 정보 자동화 연구 분석"
+      "summary": "센싱 데이터와 YOLO를 활용한 용접선 추출 및 부재 정보 자동화 연구 분석",
+      "keywords": [
+        "Computer Vision"
+      ]
     },
     {
       "date": "2023.01.03",
       "title": "Data interpolation in UWB RTLS System",
       "speaker": "안현기",
-      "summary": "UWB RTLS 시스템에서 데이터 보간 기법을 활용하여 누락된 데이터를 복원하고 위치 추정 정확도를 개선하는 방법 소개"
+      "summary": "UWB RTLS 시스템에서 데이터 보간 기법을 활용하여 누락된 데이터를 복원하고 위치 추정 정확도를 개선하는 방법 소개",
+      "keywords": [
+        "Localization"
+      ]
     },
     {
       "date": "2022.12.04",
       "title": "A Low-Cost Indoor RTLS Based on TDoA Estimation of UWB Pulse Sequences",
       "speaker": "안현기",
-      "summary": "Low-Cost UWB-TDoA 기반 실내 위치 추적 시스템 설계와 초해상도 기술을 활용한 정확도 개선 방안 소개"
+      "summary": "Low-Cost UWB-TDoA 기반 실내 위치 추적 시스템 설계와 초해상도 기술을 활용한 정확도 개선 방안 소개",
+      "keywords": [
+        "Localization"
+      ]
     },
     {
       "date": "2022.12.04",
       "title": "Lidar Sensor and SLAM algorithm",
       "speaker": "최호진",
-      "summary": "LiDAR 동작 방식 소개 및 SLAM 알고리즘 소개"
+      "summary": "LiDAR 동작 방식 소개 및 SLAM 알고리즘 소개",
+      "keywords": [
+        "Localization",
+        "Robotics"
+      ]
     },
     {
       "date": "2022.08.21",
       "title": "Real-Time Location System on UWB",
       "speaker": "안현기",
-      "summary": "UWB 기반의 실시간 위치 추적 시스템(RTLS)에 대한 주요 기술(TWR, ToA, TDoA, AoA)의 장단점과 구현 방법 설명"
+      "summary": "UWB 기반의 실시간 위치 추적 시스템(RTLS)에 대한 주요 기술(TWR, ToA, TDoA, AoA)의 장단점과 구현 방법 설명",
+      "keywords": [
+        "Localization"
+      ]
     },
     {
       "date": "2022.05.17",
       "title": "컬러 모델 분석 및 컴퓨터 비전과 관련된 딥러닝 모델 소개",
       "speaker": "최호진",
-      "summary": "다양한 컬러 모델 소개 및 CNN 모델 소개"
+      "summary": "다양한 컬러 모델 소개 및 CNN 모델 소개",
+      "keywords": [
+        "Computer Vision",
+        "Deep Learning"
+      ]
     }
   ]
 }

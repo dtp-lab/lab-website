@@ -1,0 +1,16 @@
+<%- include('../partials/head', { title: 'Publications | DTPLab', description: 'DTPLab 논문, 학술발표, 특허', pageKey: 'publications', scripts: ['publications.js'] }) %>
+<%- include('../partials/header') %>
+<main id="main">
+  <section class="page-hero"><div class="shell"><h1>Publications</h1></div></section>
+  <section class="content-section publication-content">
+    <div class="shell">
+      <div class="publication-legend" aria-label="저자 표기 안내">
+        <span><span class="legend-highlight">Highlight</span>: 연구실 구성원</span>
+        <span><sup>†</sup> 제1저자</span>
+        <span><sup>*</sup> 교신저자</span>
+      </div>
+      <div id="publications-content"></div>
+    </div>
+  </section>
+</main>
+<%- include('../partials/footer') %>

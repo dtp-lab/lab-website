@@ -5,14 +5,14 @@ import process from "node:process";
 const siteDir = path.resolve("site");
 const dataDir = path.join(siteDir, "data");
 const errors = [], warnings = [];
-const controlledKeywords = new Set(["Digital Twin", "Physical AI", "Sim2Real", "Robotics", "Reinforcement Learning", "Optimization", "Surrogate Modeling", "Computer Vision", "Synthetic Data", "Energy Systems", "AI Education"]);
+const controlledKeywords = new Set(["Digital Twin", "Physical AI", "Sim2Real", "Robotics", "Reinforcement Learning", "Optimization", "Surrogate Modeling", "Computer Vision", "Synthetic Data", "Energy Systems", "AI Education", "World Models", "Foundation Models", "Generative AI", "Localization", "Control", "Multimodal AI", "Scientific Machine Learning", "Sequence Modeling", "Resource Allocation", "Scheduling", "Deep Learning", "Extended Reality"]);
 const read = (name) => { try { return JSON.parse(fs.readFileSync(path.join(dataDir, name), "utf8")); } catch (error) { errors.push(`${name}: ${error.message}`); return {}; } };
 const requiredText = (value, location) => { if (typeof value !== "string" || !value.trim()) errors.push(`${location}: required text is missing`); };
 const validDate = (value, day = false) => new RegExp(day ? "^\\d{4}\\.(0[1-9]|1[0-2])\\.(0[1-9]|[12]\\d|3[01])$" : "^\\d{4}\\.(0[1-9]|1[0-2])$").test(value || "");
 const dateValue = (value = "") => Number(String(value).replace(/[^0-9]/g, "")) || 0;
-const validateKeywords = (keywords, location) => {
+const validateKeywords = (keywords, location, maximum = 5) => {
   if (!Array.isArray(keywords)) return errors.push(`${location}: keywords must be an array`);
-  if (keywords.length > 5) errors.push(`${location}: use at most 5 keywords`);
+  if (keywords.length > maximum) errors.push(`${location}: use at most ${maximum} keywords`);
   if (new Set(keywords).size !== keywords.length) errors.push(`${location}: duplicate keyword`);
   keywords.forEach((keyword) => { if (!controlledKeywords.has(keyword)) errors.push(`${location}: unsupported keyword (${keyword})`); });
 };
@@ -73,10 +73,10 @@ publications.forEach((item, index) => {
 });
 
 const seminars = read("seminars.json").seminars || [];
-seminars.forEach((seminar, index) => { if (!validDate(seminar.date, true)) errors.push(`seminars[${index}].date: use YYYY.MM.DD`); requiredText(seminar.title, `seminars[${index}].title`); requiredText(seminar.speaker, `seminars[${index}].speaker`); requiredText(seminar.summary, `seminars[${index}].summary`); });
+seminars.forEach((seminar, index) => { const at = `seminars[${index}]`; if (!validDate(seminar.date, true)) errors.push(`${at}.date: use YYYY.MM.DD`); requiredText(seminar.title, `${at}.title`); requiredText(seminar.speaker, `${at}.speaker`); requiredText(seminar.summary, `${at}.summary`); validateKeywords(seminar.keywords, `${at}.keywords`, 4); if (!seminar.keywords?.length) errors.push(`${at}.keywords: at least one keyword required`); });
 
 const gallery = read("gallery.json").events || [];
-gallery.forEach((event, index) => { if (!validDate(event.date)) errors.push(`gallery[${index}].date: use YYYY.MM`); requiredText(event.title, `gallery[${index}].title`); validateImages(event.images, `gallery[${index}]`); });
+gallery.forEach((event, index) => { if (!validDate(event.date)) errors.push(`gallery[${index}].date: use YYYY.MM`); requiredText(event.title, `gallery[${index}].title`); if (event.isSample !== undefined && typeof event.isSample !== "boolean") errors.push(`gallery[${index}].isSample: boolean required`); validateImages(event.images, `gallery[${index}]`); });
 
 warnings.forEach((warning) => console.warn(`Warning: ${warning}`));
 if (errors.length) { console.error(`Content validation failed (${errors.length})`); errors.forEach((error) => console.error(`- ${error}`)); process.exit(1); }
