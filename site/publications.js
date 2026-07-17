@@ -13,11 +13,19 @@
     const indexing = item.metrics?.indexing;
     if (!indexing) return "";
     let label = indexing;
-    if (indexing === "SCIE" && item.metrics?.topPercent) label = `SCIE-TOP${item.metrics.topPercent}%`;
-    else if (indexing === "SCIE" && item.metrics?.quartile) label = `SCIE-${item.metrics.quartile}`;
+    let className = indexing.toLowerCase();
+    if (indexing === "SCIE" && item.metrics?.topPercent) {
+      label = `SCIE-TOP${item.metrics.topPercent}%`;
+      className = "scie-top";
+    } else if (indexing === "SCIE" && item.metrics?.quartile) {
+      label = `SCIE-${item.metrics.quartile}`;
+      className = `scie-${item.metrics.quartile.toLowerCase()}`;
+    }
     if (item.metrics?.metricYear) label += ` · ${item.metrics.metricYear}`;
-    return `<span class="publication-tag evaluation evaluation-${escapeHtml(indexing.toLowerCase())}">${escapeHtml(label)}</span>`;
+    return `<span class="publication-tag evaluation evaluation-${escapeHtml(className)}">${escapeHtml(label)}</span>`;
   };
+
+  const patentStatusClass = (status) => ({ "등록": "patent-registered", "출원": "patent-applied", PCT: "patent-pct" })[status] || "patent-other";
 
   const renderCard = (item, headingLevel = 4) => {
     const links = [...(item.links || [])];
@@ -28,7 +36,7 @@
       `<span class="publication-tag type-${escapeHtml(item.type)}">${escapeHtml(typeLabels[item.type] || item.type)}</span>`,
       evaluationTag(item),
       item.metrics?.award ? `<span class="publication-tag evaluation evaluation-award">${escapeHtml(item.metrics.award)}</span>` : "",
-      item.patentStatus ? `<span class="publication-tag evaluation evaluation-patent">${escapeHtml(item.patentStatus)}</span>` : "",
+      item.patentStatus ? `<span class="publication-tag patent-status ${patentStatusClass(item.patentStatus)}">${escapeHtml(item.patentStatus)}</span>` : "",
     ].filter(Boolean).join("");
     const citationLabel = Number.isInteger(citation?.citationCount)
       ? `<span class="publication-citation">Semantic Scholar citations ${citation.citationCount}${citation.checkedAt ? ` · ${escapeHtml(citation.checkedAt)}` : ""}</span>`
