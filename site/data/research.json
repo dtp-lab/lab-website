@@ -1,6 +1,10 @@
 {
   "source": "https://sites.google.com/view/dtnlab",
   "migrated": "2026-07-17",
+  "overviewImage": {
+    "src": "assets/research/research-overview.png",
+    "alt": "디지털트윈과 피지컬 AI 연구 분야를 설명하는 개요도"
+  },
   "research": [
     {
       "title": "디지털트윈 + Sim2Real 전이학습",

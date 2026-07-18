@@ -4,7 +4,7 @@
     "professor": [
       {
         "group": "professor",
-        "image": "",
+        "image": "assets/people/김원석.jpg",
         "name": "Won-Suk Kim, Ph.D.",
         "fields": {
           "e-mail": "wonsukkim @ pusan.ac.kr",
@@ -25,7 +25,7 @@
     "phd": [
       {
         "group": "phd",
-        "image": "",
+        "image": "assets/people/최호진.jpg",
         "name": "Ho-Jin Choi (최호진)",
         "fields": {
           "e-mail": "tiger981228@pusan.ac.kr",
@@ -38,7 +38,7 @@
       },
       {
         "group": "phd",
-        "image": "",
+        "image": "assets/people/이지혜.jpg",
         "name": "Ji-Hye Lee (이지혜)",
         "fields": {
           "e-mail": "dlwlgp2920@pusan.ac.kr",
@@ -51,7 +51,7 @@
       },
       {
         "group": "phd",
-        "image": "",
+        "image": "assets/people/김준원.jpg",
         "name": "Jun-Won Kim (김준원)",
         "fields": {
           "affiliation": "국방과학연구소(ADD)",
@@ -65,7 +65,7 @@
       },
       {
         "group": "phd",
-        "image": "",
+        "image": "assets/people/최현석.png",
         "name": "Hyun-Suk Choi (최현석)",
         "fields": {
           "affiliation": "중소조선연구원(RIMS)",
@@ -81,7 +81,7 @@
     "ms": [
       {
         "group": "ms",
-        "image": "",
+        "image": "assets/people/이창민.jpg",
         "name": "Chang-Min Lee (이창민)",
         "fields": {
           "e-mail": "lak0192@pusan.ac.kr",
@@ -94,7 +94,7 @@
       },
       {
         "group": "ms",
-        "image": "",
+        "image": "assets/people/고은성.png",
         "name": "Eun-Seong Ko (고은성)",
         "fields": {
           "e-mail": "eunseong624@pusan.ac.kr",
@@ -107,7 +107,7 @@
       },
       {
         "group": "ms",
-        "image": "",
+        "image": "assets/people/김민재.jpg",
         "name": "Min-Jae Kim (김민재)",
         "fields": {
           "e-mail": "ysicka@pusan.ac.kr",
@@ -120,7 +120,7 @@
       },
       {
         "group": "ms",
-        "image": "",
+        "image": "assets/people/이창주.jpg",
         "name": "Chang-Ju Lee (이창주)",
         "fields": {
           "e-mail": "busbtvi@pusan.ac.kr",
@@ -133,7 +133,7 @@
       },
       {
         "group": "ms",
-        "image": "",
+        "image": "assets/people/하서현.jpg",
         "name": "Seo-Hyun Ha (하서현)",
         "fields": {
           "e-mail": "bluelily811@pusan.ac.kr",
@@ -148,7 +148,7 @@
     "undergrad": [
       {
         "group": "undergrad",
-        "image": "",
+        "image": "assets/people/김성민.jpg",
         "name": "Seong-Min Kim (김성민)",
         "fields": {
           "e-mail": "dan1626@pusan.ac.kr",
@@ -161,7 +161,7 @@
       },
       {
         "group": "undergrad",
-        "image": "",
+        "image": "assets/people/여채언.jpg",
         "name": "Chae-Eon Yeo (여채언)",
         "fields": {
           "e-mail": "codjs2659@pusan.ac.kr",
@@ -174,7 +174,7 @@
       },
       {
         "group": "undergrad",
-        "image": "",
+        "image": "assets/people/옥소미.jpg",
         "name": "So-Mi Ok (옥소미)",
         "fields": {
           "e-mail": "osm0071@pusan.ac.kr",
@@ -187,7 +187,7 @@
       },
       {
         "group": "undergrad",
-        "image": "",
+        "image": "assets/people/홍석기.jpg",
         "name": "Seok-Gi Hong (홍석기)",
         "fields": {
           "e-mail": "hongseokgi00@pusan.ac.kr",
@@ -200,7 +200,7 @@
       },
       {
         "group": "undergrad",
-        "image": "",
+        "image": "assets/people/홍세민.jpg",
         "name": "Se-Min Hong (홍세민)",
         "fields": {
           "e-mail": "semin73@pusan.ac.kr",
@@ -213,7 +213,7 @@
       },
       {
         "group": "undergrad",
-        "image": "",
+        "image": "assets/people/윤태호.jpg",
         "name": "Tae-Ho Yun (윤태호)",
         "fields": {
           "e-mail": "taeho2004@pusan.ac.kr",
@@ -226,7 +226,7 @@
       },
       {
         "group": "undergrad",
-        "image": "",
+        "image": "assets/people/김범수.png",
         "name": "Bum-Soo Kim (김범수)",
         "fields": {
           "e-mail": "cacaki@pusan.ac.kr",
@@ -241,7 +241,7 @@
     "alumni": [
       {
         "group": "alumni",
-        "image": "",
+        "image": "assets/people/김정호.jpg",
         "name": "Jeong-Ho Kim (김정호)",
         "fields": {
           "e-mail": "touch@pusan.ac.kr",
@@ -254,7 +254,7 @@
       },
       {
         "group": "alumni",
-        "image": "",
+        "image": "assets/people/안현기.jpg",
         "name": "Hyun-Gi An (안현기)",
         "fields": {
           "e-mail": "tykr0001@pusan.ac.kr",
@@ -267,7 +267,7 @@
       },
       {
         "group": "alumni",
-        "image": "",
+        "image": "assets/people/김희준.png",
         "name": "Hee-Jun Kim (김희준)",
         "fields": {
           "affiliation": "삼성중공업(Samsung Heavy Industries)",

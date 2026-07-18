@@ -25,6 +25,17 @@ const validateImages = (images, location) => {
     else if (image.src && !fs.existsSync(path.join(siteDir, image.src))) errors.push(`${location}.images[${index}]: file does not exist (${image.src})`);
   });
 };
+const validateImagePath = (image, location) => {
+  if (!image) return;
+  if (/^https?:/i.test(image)) errors.push(`${location}: remote images are not allowed`);
+  else if (!fs.existsSync(path.join(siteDir, image))) errors.push(`${location}: file does not exist (${image})`);
+};
+const validateImageObject = (image, location) => {
+  if (!image || typeof image !== "object") return errors.push(`${location}: use {src, alt}`);
+  requiredText(image.src, `${location}.src`);
+  requiredText(image.alt, `${location}.alt`);
+  validateImagePath(image.src, `${location}.src`);
+};
 
 const home = read("home.json");
 requiredText(home.recruitment?.intro, "home.recruitment.intro");
@@ -36,12 +47,13 @@ news.forEach((item, index) => { if (!validDate(item.date)) errors.push(`news[${i
 const people = read("people.json").groups || {};
 for (const group of ["professor", "phd", "ms", "undergrad", "alumni"]) {
   if (!Array.isArray(people[group])) errors.push(`people.${group}: group is missing`);
-  (people[group] || []).forEach((member, index) => { requiredText(member.name, `people.${group}[${index}].name`); if (member.image && /^https?:/i.test(member.image)) errors.push(`people.${group}[${index}].image: remote images are not allowed`); });
+  (people[group] || []).forEach((member, index) => { requiredText(member.name, `people.${group}[${index}].name`); validateImagePath(member.image, `people.${group}[${index}].image`); });
 }
 
 const research = read("research.json");
+validateImageObject(research.overviewImage, "research.overviewImage");
 if ((research.research || []).length !== 4) errors.push("research: exactly 4 core topics are required");
-(research.research || []).forEach((topic, index) => { requiredText(topic.title, `research[${index}].title`); requiredText(topic.description, `research[${index}].description`); if (topic.image && /^https?:/i.test(topic.image)) errors.push(`research[${index}].image: remote images are not allowed`); });
+(research.research || []).forEach((topic, index) => { requiredText(topic.title, `research[${index}].title`); requiredText(topic.description, `research[${index}].description`); validateImagePath(topic.image, `research[${index}].image`); });
 
 const projects = read("projects.json").projects || [];
 const projectIds = new Set();

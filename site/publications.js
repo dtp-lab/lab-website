@@ -3,6 +3,11 @@
   const root = document.querySelector("#publications-content");
   let citations = { papers: {} };
   const typeLabels = { journal: "Journal", conference: "Conference", patent: "Patent" };
+  const icons = {
+    authors: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M16 4a4 4 0 0 1 0 8M17 14a7 7 0 0 1 5 7"/></svg>',
+    venue: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v5h5M8 12h8M8 16h8"/></svg>',
+    keywords: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20.5 13.5-7 7a2 2 0 0 1-2.8 0L3 12.8V3h9.8l7.7 7.7a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg>',
+  };
 
   const renderAuthor = (author) => {
     const symbols = `${author.isFirstAuthor ? '<sup class="author-symbol" title="제1저자" aria-label="제1저자">†</sup>' : ""}${author.isCorrespondingAuthor ? '<sup class="author-symbol" title="교신저자" aria-label="교신저자">*</sup>' : ""}`;
@@ -16,10 +21,10 @@
     let className = indexing.toLowerCase();
     if (indexing === "SCIE" && item.metrics?.topPercent) {
       label = `SCIE-TOP${item.metrics.topPercent}%`;
-      className = "scie-top";
+      className = `scie-top${String(item.metrics.topPercent).replace(/[^0-9]/g, "")}`;
     } else if (indexing === "SCIE" && item.metrics?.quartile) {
       label = `SCIE-${item.metrics.quartile}`;
-      className = `scie-${item.metrics.quartile.toLowerCase()}`;
+      className = ["Q1", "Q2"].includes(item.metrics.quartile) ? `scie-${item.metrics.quartile.toLowerCase()}` : "scie";
     }
     if (item.metrics?.metricYear) label += ` · ${item.metrics.metricYear}`;
     return `<span class="publication-tag evaluation evaluation-${escapeHtml(className)}">${escapeHtml(label)}</span>`;
@@ -42,7 +47,10 @@
       ? `<span class="publication-citation">Semantic Scholar citations ${citation.citationCount}${citation.checkedAt ? ` · ${escapeHtml(citation.checkedAt)}` : ""}</span>`
       : "";
     const heading = headingLevel === 3 ? "h3" : "h4";
-    return `<article class="publication-card"><div class="publication-top"><div class="publication-main"><div class="publication-tags">${topTags}</div><${heading}>${escapeHtml(item.title)}</${heading}></div>${links.length ? `<nav class="publication-links" aria-label="외부 링크">${links.map((link) => `<a class="icon-link" href="${escapeHtml(link.url)}" target="_blank" rel="noreferrer" title="${escapeHtml(link.label)}">${escapeHtml(link.label)}</a>`).join("")}</nav>` : ""}</div>${item.authors?.length ? `<p class="authors">${item.authors.map(renderAuthor).join(", ")}</p>` : ""}<div class="publication-meta"><p class="publication-venue">${[item.venue, item.details, item.publishedAt].filter(Boolean).map(escapeHtml).join(" · ")}</p>${citationLabel}</div>${renderKeywords(item.keywords)}</article>`;
+    const authors = item.authors?.length ? `<div class="publication-detail-row publication-authors-row"><span class="publication-row-icon">${icons.authors}</span><p class="authors">${item.authors.map(renderAuthor).join(", ")}</p></div>` : "";
+    const venue = `<div class="publication-detail-row publication-venue-row"><span class="publication-row-icon">${icons.venue}</span><div class="publication-meta"><p class="publication-venue">${[item.venue, item.details, item.publishedAt].filter(Boolean).map(escapeHtml).join(" · ")}</p>${citationLabel}</div></div>`;
+    const keywords = item.keywords?.length ? `<div class="publication-detail-row publication-keywords-row"><span class="publication-row-icon">${icons.keywords}</span>${renderKeywords(item.keywords)}</div>` : "";
+    return `<article class="publication-card"><div class="publication-top"><div class="publication-main"><div class="publication-tags">${topTags}</div><${heading}>${escapeHtml(item.title)}</${heading}></div>${links.length ? `<nav class="publication-links" aria-label="외부 링크">${links.map((link) => `<a class="icon-link" href="${escapeHtml(link.url)}" target="_blank" rel="noreferrer" title="${escapeHtml(link.label)}">${escapeHtml(link.label)}</a>`).join("")}</nav>` : ""}</div>${authors}${venue}${keywords}</article>`;
   };
 
   const renderYearGroups = (items) => {

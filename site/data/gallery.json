@@ -45,7 +45,18 @@
       "date": "2025.07",
       "title": "MITA 2025",
       "description": "MITA 국제학술대회 구두 발표(최호진, 이지혜)",
-      "images": []
+      "images": [
+        {
+          "src": "assets/gallery/2025-07-mita/01.webp",
+          "alt": "MITA 2025 국제학술대회 활동 사진 1",
+          "caption": "MITA 2025 국제학술대회"
+        },
+        {
+          "src": "assets/gallery/2025-07-mita/02.webp",
+          "alt": "MITA 2025 국제학술대회 활동 사진 2",
+          "caption": "MITA 2025 국제학술대회"
+        }
+      ]
     },
     {
       "date": "2025.07",
@@ -57,7 +68,33 @@
       "date": "2025.03",
       "title": "연구실 사진",
       "description": "dtnlab 연구실 대청소 후",
-      "images": []
+      "images": [
+        {
+          "src": "assets/gallery/2025-03-lab/01.webp",
+          "alt": "2025년 3월 연구실 단체 사진 1",
+          "caption": "연구실 대청소 후"
+        },
+        {
+          "src": "assets/gallery/2025-03-lab/02.webp",
+          "alt": "2025년 3월 연구실 단체 사진 2",
+          "caption": "연구실 대청소 후"
+        },
+        {
+          "src": "assets/gallery/2025-03-lab/03.webp",
+          "alt": "2025년 3월 연구실 단체 사진 3",
+          "caption": "연구실 대청소 후"
+        },
+        {
+          "src": "assets/gallery/2025-03-lab/04.webp",
+          "alt": "2025년 3월 연구실 단체 사진 4",
+          "caption": "연구실 대청소 후"
+        },
+        {
+          "src": "assets/gallery/2025-03-lab/05.webp",
+          "alt": "2025년 3월 연구실 단체 사진 5",
+          "caption": "연구실 대청소 후"
+        }
+      ]
     },
     {
       "date": "2024.06",
